@@ -1,3 +1,5 @@
+import "./aliases";
+
 import { App } from "./app";
 
 function handleError(e: any) {
