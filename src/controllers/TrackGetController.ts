@@ -1,9 +1,13 @@
 import { Request, Response } from "express";
+import fs from "fs/promises";
 import httpStatus from "http-status";
+import path from "path";
 
 import Plausible from "@/libs/Plausible";
 
 import { Controller } from "./Controller";
+
+const staticFolderPath = path.resolve(`${__dirname}/../../static`);
 
 export default class HomeGetController implements Controller {
 	public analytics: Plausible;
@@ -40,8 +44,11 @@ export default class HomeGetController implements Controller {
 				},
 			});
 
+			const pixelImage = await fs.readFile(path.resolve(`${staticFolderPath}/pixel.png`));
+
 			res.status(httpStatus.OK);
-			res.send();
+			res.writeHead(200, { "Content-Type": "image/png" });
+			res.end(pixelImage);
 		} catch (error) {
 			console.log(error.message);
 
