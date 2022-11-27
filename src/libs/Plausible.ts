@@ -11,6 +11,7 @@ type Headers = {
 	["Content-Type"]?: string;
 	["X-Forwarded-For"]: string;
 	["User-Agent"]: string;
+	["referer"]: string;
 };
 
 type Track = {

@@ -20,6 +20,7 @@ export default class HomeGetController implements Controller {
 		try {
 			const userAgent = req.headers["user-agent"];
 			const ipAddresses = req.header("x-forwarded-for") || req.socket.remoteAddress;
+			const referer = req.header("referer");
 
 			const { query } = req;
 
@@ -41,6 +42,7 @@ export default class HomeGetController implements Controller {
 				headers: {
 					"User-Agent": userAgent,
 					"X-Forwarded-For": ipAddresses,
+					referer,
 				},
 			});
 
