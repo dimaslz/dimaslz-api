@@ -11,15 +11,17 @@ export default class HomeGetController implements Controller {
 
 		const { attribute } = req.params;
 
-		if (!(camelCase(attribute) in data)) {
-			res.json({
+		if (!attribute) {
+			return res.json({ ...data });
+		}
+
+		if (attribute && !(camelCase(attribute) in data)) {
+			return res.json({
 				status: 404,
 				message: "Resource data not found",
 			});
-		} else {
-			return res.json(data[camelCase(attribute)]);
 		}
 
-		res.json({ ...data });
+		return res.json(data[camelCase(attribute)]);
 	}
 }
