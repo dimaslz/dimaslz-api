@@ -205,7 +205,9 @@ export default {
 				city: "Santa Cruz de Tenerife",
 				country: "Spain",
 			},
-			description: "Associate's Degree in Software Development",
+			title: "Associate's Degree in Software Development",
+			description:
+				"Learning database management and software development in python, java and visual basic",
 		},
 	],
 	status: ["Senior Frontend Engineer at Backmarket", "Working at MySelf"],
