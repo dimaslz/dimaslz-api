@@ -191,13 +191,15 @@ export default {
 	],
 	education: [
 		{
-			from: {
-				month: "-",
-				year: "2009",
-			},
-			to: {
-				month: "-",
-				year: "20011",
+			date: {
+				from: {
+					month: "-",
+					year: "2009",
+				},
+				to: {
+					month: "-",
+					year: "20011",
+				},
 			},
 			baseOn: {
 				city: "Santa Cruz de Tenerife",
