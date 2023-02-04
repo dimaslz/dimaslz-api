@@ -1,10 +1,10 @@
 {
-  "name": "@fito-deploy/api",
+  "name": "@dimaslz/api",
   "version": "0.0.1",
-  "description": "Fito deploy",
+  "description": "dimaslz resume by Api",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dimaslz/fito-deploy-api"
+    "url": "https://github.com/dimaslz/dimaslz-api"
   },
   "author": "Dimas López <me@dimaslz.io>",
   "license": "MIT",

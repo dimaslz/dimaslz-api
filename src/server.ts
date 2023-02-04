@@ -42,8 +42,9 @@ export class Server {
 		return new Promise((resolve) => {
 			this.httpServer = this.express.listen(this.port, () => {
 				console.info(
-					`  Backoffice Backend App is running at http://localhost:${this.port
-					} in ${this.express.get("env")} mode`
+					`  dimaslz resume by Api -> http://localhost:${this.port} in ${this.express.get(
+						"env"
+					)} mode`
 				);
 				console.info("  Press CTRL-C to stop\n");
 				resolve();

@@ -1,3 +1,5 @@
-# Pixel API
+# dimaslz API
 
-Simple API to track events to Plausible
+Resume of Dimas López by API
+
+## TODO
