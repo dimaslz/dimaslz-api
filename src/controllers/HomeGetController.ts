@@ -22,6 +22,8 @@ export default class HomeGetController implements Controller {
 			});
 		}
 
-		return res.json(data[camelCase(attribute)]);
+		return res.json({
+			data: data[camelCase(attribute)],
+		});
 	}
 }
