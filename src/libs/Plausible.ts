@@ -1,5 +1,3 @@
-import axios from "axios";
-
 type Data = {
 	name: string;
 	url: string;
@@ -24,14 +22,13 @@ export default class Plausible {
 
 	async track({ data, headers }: Track) {
 		try {
-			return axios({
+			return fetch("https://plausible.io/api/event", {
 				method: "POST",
-				url: "https://plausible.io/api/event",
 				headers: {
 					"Content-Type": this.contentType,
 					...headers,
 				},
-				data,
+				body: JSON.stringify(data),
 			});
 		} catch (error) {
 			console.log("ERORR", error.message);
