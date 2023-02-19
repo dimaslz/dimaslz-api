@@ -1,0 +1,733 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home get controller: GET / should return the correct resource /email 1`] = `
+Object {
+  "data": "your@email.com",
+}
+`;
+
+exports[`Home get controller: GET / should return the correct resource /jobs 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "BackMarket",
+      "date": Object {
+        "from": Object {
+          "month": "august",
+          "year": "2021",
+        },
+        "to": Object {
+          "month": "current",
+          "year": "current",
+        },
+      },
+      "description": "Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
+
+			Used Vue2, Nuxt, Jest, Testing Library...",
+      "keywords": Array [
+        "vue2",
+        "vue3",
+        "vuex",
+        "nuxt",
+        "jest",
+        "testing library",
+        "playwright",
+        "cypress",
+        "SOLID",
+        "cloudflare",
+      ],
+      "title": "Senior Frontend Engineer",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "MySelf",
+      "date": Object {
+        "from": Object {
+          "month": "february",
+          "year": "2020",
+        },
+        "to": Object {
+          "month": "current",
+          "year": "current",
+        },
+      },
+      "description": "Personal break to focus in my mental health, think, study and work on my side projects and open-source. Self-training to improve as a professional and to be ready for the next challenge.
+
+			From mid-2021 working as consultant and mentoring.",
+      "keywords": Array [
+        "mentoring",
+        "consulting",
+        "react",
+        "vue",
+        "angular",
+        "nodejs",
+        "docker",
+        "infrastructure",
+        "side projects",
+        "entrepreneurship",
+        "socketIO",
+        "SOLID",
+        "cloudflare",
+        "typescript",
+        "vitejs",
+        "cypress",
+        "playwright",
+      ],
+      "title": "Full Stack Engineer",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "Ubeeqo (Europcar Mobility Group)",
+      "date": Object {
+        "from": Object {
+          "month": "november",
+          "year": "2017",
+        },
+        "to": Object {
+          "month": "february",
+          "year": "2020",
+        },
+      },
+      "description": "Ubeeqo is one of the products of Europcar Mobility Group. I joined the company as a Frontend developer, I was promoted to be the responsible of all the web applications for Ubeeqo as a Frontend Manager/Lead.
+
+			I grew the team from 4 to ~14 Frontend developers, while the company grew from ~15 to ~140 employees just in 2 years in Barcelona HUB.
+
+			- Define the frontend architecture for all web products in the company.
+			- Define the UX interactions with layouts and components.
+			- Define components library based in Vuejs.
+			- Managed the Agile development process from specification to completion.
+			- Define the pipeline test.
+			- Develop and define e2e implementation.
+			- Recruiting frontend and QA team.
+
+			Used Vanilla Javascript, VueJS (v2.x), VUEX, SASS, NUXT, Nightwatch and Cypress (frameworks E2E), Jest, webpack, vue-cli, nodejs, Babel, Rollup, Docker, Scrum methodology.",
+      "keywords": Array [
+        "vue",
+        "docker",
+        "lidership",
+        "nightwatch",
+        "cypress",
+        "jest",
+        "testing nodejs",
+        "scrum",
+        "nuxt",
+        "management",
+      ],
+      "title": "Fronend Engineer - Lead/Manager",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "Ubeeqo (Europcar Mobility Group)",
+      "date": Object {
+        "from": Object {
+          "month": "-",
+          "year": "2011",
+        },
+        "to": Object {
+          "month": "-",
+          "year": "2015",
+        },
+      },
+      "description": "I started as a back-end developer working with PHP, hen moved to full-stack development with Node.js and finally focused on front-end development. During these years I was able to solve many problems in different environments and adapting to different technologies.
+
+			Worked Trovit, BeRepublic, FocusOnEmotions, Zyncro, Stuart Delivery and Instaply,
+
+			Used JS, AngularJS, ReactJS, NodeJS, CSS, Stylus, Grunt, Gulp, Npm, CI, Scrum methodology and SOLID practices, SockerIO, PHP, ...",
+      "keywords": Array [
+        "php",
+        "jquery",
+        "nodejs",
+        "angularjs",
+        "npm",
+        "ci",
+        "scrum",
+        "SOLID",
+        "socketIO",
+      ],
+      "title": "Previous experiences",
+    },
+  ],
+}
+`;
+
+exports[`Home get controller: GET / should return the correct resource /jobs with a correct filter 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "BackMarket",
+      "date": Object {
+        "from": Object {
+          "month": "august",
+          "year": "2021",
+        },
+        "to": Object {
+          "month": "current",
+          "year": "current",
+        },
+      },
+      "description": "Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
+
+			Used Vue2, Nuxt, Jest, Testing Library...",
+      "keywords": Array [
+        "vue2",
+        "vue3",
+        "vuex",
+        "nuxt",
+        "jest",
+        "testing library",
+        "playwright",
+        "cypress",
+        "SOLID",
+        "cloudflare",
+      ],
+      "title": "Senior Frontend Engineer",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "MySelf",
+      "date": Object {
+        "from": Object {
+          "month": "february",
+          "year": "2020",
+        },
+        "to": Object {
+          "month": "current",
+          "year": "current",
+        },
+      },
+      "description": "Personal break to focus in my mental health, think, study and work on my side projects and open-source. Self-training to improve as a professional and to be ready for the next challenge.
+
+			From mid-2021 working as consultant and mentoring.",
+      "keywords": Array [
+        "mentoring",
+        "consulting",
+        "react",
+        "vue",
+        "angular",
+        "nodejs",
+        "docker",
+        "infrastructure",
+        "side projects",
+        "entrepreneurship",
+        "socketIO",
+        "SOLID",
+        "cloudflare",
+        "typescript",
+        "vitejs",
+        "cypress",
+        "playwright",
+      ],
+      "title": "Full Stack Engineer",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "Ubeeqo (Europcar Mobility Group)",
+      "date": Object {
+        "from": Object {
+          "month": "november",
+          "year": "2017",
+        },
+        "to": Object {
+          "month": "february",
+          "year": "2020",
+        },
+      },
+      "description": "Ubeeqo is one of the products of Europcar Mobility Group. I joined the company as a Frontend developer, I was promoted to be the responsible of all the web applications for Ubeeqo as a Frontend Manager/Lead.
+
+			I grew the team from 4 to ~14 Frontend developers, while the company grew from ~15 to ~140 employees just in 2 years in Barcelona HUB.
+
+			- Define the frontend architecture for all web products in the company.
+			- Define the UX interactions with layouts and components.
+			- Define components library based in Vuejs.
+			- Managed the Agile development process from specification to completion.
+			- Define the pipeline test.
+			- Develop and define e2e implementation.
+			- Recruiting frontend and QA team.
+
+			Used Vanilla Javascript, VueJS (v2.x), VUEX, SASS, NUXT, Nightwatch and Cypress (frameworks E2E), Jest, webpack, vue-cli, nodejs, Babel, Rollup, Docker, Scrum methodology.",
+      "keywords": Array [
+        "vue",
+        "docker",
+        "lidership",
+        "nightwatch",
+        "cypress",
+        "jest",
+        "testing nodejs",
+        "scrum",
+        "nuxt",
+        "management",
+      ],
+      "title": "Fronend Engineer - Lead/Manager",
+    },
+  ],
+}
+`;
+
+exports[`Home get controller: GET / should return the correct resource /name 1`] = `
+Object {
+  "data": "Dimas",
+}
+`;
+
+exports[`Home get controller: GET / should return the correct resource /phone 1`] = `
+Object {
+  "data": "+34 000 000 000",
+}
+`;
+
+exports[`Home get controller: GET / should return the full data by default 1`] = `
+Object {
+  "baseOn": Object {
+    "city": "Barcelona",
+    "country": "Spain",
+  },
+  "education": Array [
+    Object {
+      "baseOn": Object {
+        "city": "Santa Cruz de Tenerife",
+        "country": "Spain",
+      },
+      "date": Object {
+        "from": Object {
+          "month": "-",
+          "year": "2009",
+        },
+        "to": Object {
+          "month": "-",
+          "year": "2011",
+        },
+      },
+      "description": "Learning database management and software development in python, java and visual basic",
+      "title": "Associate's Degree in Software Development",
+    },
+  ],
+  "email": undefined,
+  "formerJobs": Array [
+    "Trovit",
+    "BeRepublic",
+    "FocusOnEmotions",
+    "Zyncro",
+    "Instaply",
+    "Ubeeqo/Europcar Mobility Group",
+  ],
+  "interests": "Entrepreneurship, business, web development, mobile, backend, devops, product, management, ...",
+  "introduction": "Self-taught enthusiast and crazy about technology, I work in web technologies since 2011, from backend to frontend but also joining backend and mobile environments in parallel projects.
+
+	I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.
+
+	Interesting topics for me are cloud platforms, SAAS, tooling, open source, learning, automation, React, Vue, Angular, Svelte, Kubernetes, Docker, Github Actions, AWS, Testing (unit, integration, e2e), nodejs and more. I am open to listen, learn and coding!",
+  "jobs": Array [
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "BackMarket",
+      "date": Object {
+        "from": Object {
+          "month": "august",
+          "year": "2021",
+        },
+        "to": Object {
+          "month": "current",
+          "year": "current",
+        },
+      },
+      "description": "Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
+
+			Used Vue2, Nuxt, Jest, Testing Library...",
+      "keywords": Array [
+        "vue2",
+        "vue3",
+        "vuex",
+        "nuxt",
+        "jest",
+        "testing library",
+        "playwright",
+        "cypress",
+        "SOLID",
+        "cloudflare",
+      ],
+      "title": "Senior Frontend Engineer",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "MySelf",
+      "date": Object {
+        "from": Object {
+          "month": "february",
+          "year": "2020",
+        },
+        "to": Object {
+          "month": "current",
+          "year": "current",
+        },
+      },
+      "description": "Personal break to focus in my mental health, think, study and work on my side projects and open-source. Self-training to improve as a professional and to be ready for the next challenge.
+
+			From mid-2021 working as consultant and mentoring.",
+      "keywords": Array [
+        "mentoring",
+        "consulting",
+        "react",
+        "vue",
+        "angular",
+        "nodejs",
+        "docker",
+        "infrastructure",
+        "side projects",
+        "entrepreneurship",
+        "socketIO",
+        "SOLID",
+        "cloudflare",
+        "typescript",
+        "vitejs",
+        "cypress",
+        "playwright",
+      ],
+      "title": "Full Stack Engineer",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "Ubeeqo (Europcar Mobility Group)",
+      "date": Object {
+        "from": Object {
+          "month": "november",
+          "year": "2017",
+        },
+        "to": Object {
+          "month": "february",
+          "year": "2020",
+        },
+      },
+      "description": "Ubeeqo is one of the products of Europcar Mobility Group. I joined the company as a Frontend developer, I was promoted to be the responsible of all the web applications for Ubeeqo as a Frontend Manager/Lead.
+
+			I grew the team from 4 to ~14 Frontend developers, while the company grew from ~15 to ~140 employees just in 2 years in Barcelona HUB.
+
+			- Define the frontend architecture for all web products in the company.
+			- Define the UX interactions with layouts and components.
+			- Define components library based in Vuejs.
+			- Managed the Agile development process from specification to completion.
+			- Define the pipeline test.
+			- Develop and define e2e implementation.
+			- Recruiting frontend and QA team.
+
+			Used Vanilla Javascript, VueJS (v2.x), VUEX, SASS, NUXT, Nightwatch and Cypress (frameworks E2E), Jest, webpack, vue-cli, nodejs, Babel, Rollup, Docker, Scrum methodology.",
+      "keywords": Array [
+        "vue",
+        "docker",
+        "lidership",
+        "nightwatch",
+        "cypress",
+        "jest",
+        "testing nodejs",
+        "scrum",
+        "nuxt",
+        "management",
+      ],
+      "title": "Fronend Engineer - Lead/Manager",
+    },
+    Object {
+      "baseOn": Object {
+        "city": "Barcelona",
+        "country": "Spain",
+      },
+      "company": "Ubeeqo (Europcar Mobility Group)",
+      "date": Object {
+        "from": Object {
+          "month": "-",
+          "year": "2011",
+        },
+        "to": Object {
+          "month": "-",
+          "year": "2015",
+        },
+      },
+      "description": "I started as a back-end developer working with PHP, hen moved to full-stack development with Node.js and finally focused on front-end development. During these years I was able to solve many problems in different environments and adapting to different technologies.
+
+			Worked Trovit, BeRepublic, FocusOnEmotions, Zyncro, Stuart Delivery and Instaply,
+
+			Used JS, AngularJS, ReactJS, NodeJS, CSS, Stylus, Grunt, Gulp, Npm, CI, Scrum methodology and SOLID practices, SockerIO, PHP, ...",
+      "keywords": Array [
+        "php",
+        "jquery",
+        "nodejs",
+        "angularjs",
+        "npm",
+        "ci",
+        "scrum",
+        "SOLID",
+        "socketIO",
+      ],
+      "title": "Previous experiences",
+    },
+  ],
+  "keywords": Array [
+    "javascript",
+    "vue",
+    "react",
+    "angular",
+    "nodejs+express",
+    "nest",
+    "software",
+    "android",
+    "ios",
+    "react native",
+    "svelte",
+    "github actions",
+    "aws",
+    "testing library",
+    "SAAS",
+    "open source",
+    "tooling",
+    "learning",
+    "kubernetes",
+    "docker",
+    "tailwindcss",
+  ],
+  "lastname": "López Zurita",
+  "name": "Dimas",
+  "network": Object {
+    "github": "https://github.com/dimaslz",
+    "linkedin": "https://www.linkedin.com/in/dimaslopezzurita",
+    "twitter": "https://twitter.com/dimaslz",
+  },
+  "phone": undefined,
+  "projects": Array [
+    Object {
+      "description": "An Angular components library to use Heroicons.com in your Angular projects.",
+      "isOpenSource": true,
+      "keywords": Array [
+        "typescript",
+        "javascript",
+        "angular",
+        "nodejs",
+        "library",
+        "components",
+        "tailwindcss",
+        "npm",
+      ],
+      "name": "ng-heroicons",
+      "npm": "https://www.npmjs.com/package/@dimaslz/ng-heroicons",
+      "repository": Array [
+        "https://github.com/dimaslz/ng-heroicons",
+      ],
+      "stack": Array [
+        "typescript",
+        "javascript",
+        "angular",
+        "nodejs",
+        "tailwindcss",
+      ],
+      "url": "https://ng-heroicons.dimaslz.dev/",
+    },
+    Object {
+      "description": "A tool to create mock Api responses with your custom schema.",
+      "isOpenSource": false,
+      "keywords": Array [
+        "typescript",
+        "preact",
+        "nodejs",
+        "vitejs",
+        "tools",
+        "api",
+        "tailwindcss",
+      ],
+      "name": "Randomdata",
+      "npm": null,
+      "repository": Array [],
+      "stack": Array [
+        "typescript",
+        "preact",
+        "nodejs",
+        "vitejs",
+        "tailwindcss",
+      ],
+      "url": "https://randomdata.loremapi.io/",
+    },
+    Object {
+      "description": "A tool to create a framework icon component from a SVG",
+      "isOpenSource": false,
+      "keywords": Array [
+        "nextjs",
+        "nodejs",
+        "tailwindcss",
+        "tools",
+      ],
+      "name": "Framework icon builder",
+      "npm": null,
+      "repository": Array [],
+      "stack": Array [
+        "nextjs",
+        "nodejs",
+        "tailwindcss",
+      ],
+    },
+    Object {
+      "description": "Deploy any project easily, like Vercel or Heroku but in your self hosting.",
+      "isOpenSource": false,
+      "keywords": Array [
+        "vitejs",
+        "typescript",
+        "vue3",
+        "pinia",
+        "tailwindcss",
+        "docker",
+        "tools",
+        "github actions",
+      ],
+      "name": "Fito deploy",
+      "npm": null,
+      "repository": Array [],
+      "stack": Array [
+        "vitejs",
+        "typescript",
+        "vue3",
+        "pinia",
+        "tailwindcss",
+        "docker",
+        "github actions",
+      ],
+      "url": "https://fito-deploy.dimaslz.dev",
+    },
+    Object {
+      "description": "Mock and document your Api's",
+      "isOpenSource": false,
+      "keywords": Array [
+        "angular",
+        "nodejs",
+        "tailwindcss",
+        "typescript",
+        "tools",
+        "api",
+        "developers",
+      ],
+      "name": "Loremapi",
+      "npm": null,
+      "repository": Array [],
+      "stack": Array [
+        "angular",
+        "nodejs",
+        "tailwindcss",
+        "typescript",
+      ],
+      "url": "https://loremapi.io",
+    },
+    Object {
+      "description": "My online CV",
+      "isOpenSource": true,
+      "keywords": Array [
+        "svelte",
+        "tailwindcss",
+        "typescript",
+        "cv",
+        "landing",
+      ],
+      "name": "cv.dimaslz.dev",
+      "npm": null,
+      "repository": Array [
+        "https://github.com/dimaslz/dimaslz-cv",
+      ],
+      "stack": Array [
+        "svelte",
+        "tailwindcss",
+        "typescript",
+      ],
+      "url": "https://cv.dimaslz.dev",
+    },
+    Object {
+      "description": "My professional info by API",
+      "isOpenSource": true,
+      "keywords": Array [
+        "nodejs",
+        "typescript",
+        "cv",
+        "api",
+      ],
+      "name": "api.dimaslz.dev",
+      "npm": null,
+      "repository": Array [
+        "https://github.com/dimaslz/dimaslz-api",
+      ],
+      "stack": Array [
+        "nodejs",
+        "typescript",
+      ],
+      "url": "https://api.dimaslz.dev",
+    },
+    Object {
+      "description": "Dev landing",
+      "isOpenSource": true,
+      "keywords": Array [
+        "javascript",
+        "tailwindcss",
+        "landing",
+      ],
+      "name": "dimaslz.dev",
+      "npm": null,
+      "repository": Array [
+        "https://github.com/dimaslz/dimaslz.io-landing",
+      ],
+      "stack": Array [
+        "javascript",
+        "tailwindcss",
+      ],
+      "url": "https://dimaslz.dev",
+    },
+    Object {
+      "description": "Profesional landing profile",
+      "isOpenSource": true,
+      "keywords": Array [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+      ],
+      "name": "dimaslz.com",
+      "npm": null,
+      "repository": Array [
+        "https://github.com/dimaslz/dimaslz.io",
+      ],
+      "stack": Array [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+      ],
+      "url": "https://dimaslz.com",
+    },
+  ],
+  "status": Array [
+    "Senior Frontend Engineer at Backmarket",
+    "Working at MySelf",
+  ],
+  "title": "Senior Software Engineer",
+}
+`;
