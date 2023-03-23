@@ -255,7 +255,7 @@ export default {
 			keywords: ["nextjs", "nodejs", "tailwindcss", "tools"],
 			public: false,
 			npm: null,
-			url: "https://icon-lib-builder.dimaslz.dev",
+			url: "https://svg-icon-2-fw-component.dimaslz.dev",
 			repository: [],
 		},
 		{
