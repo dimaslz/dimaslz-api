@@ -10,6 +10,7 @@ export default {
 		country: "Spain",
 		city: "Barcelona",
 	},
+	alias: "dimaslz",
 	phone: DATA_PHONE,
 	introduction:
 		"Self-taught enthusiast and crazy about technology, I work in web technologies since 2011, from backend to frontend but also joining backend and mobile environments in parallel projects. I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.",
