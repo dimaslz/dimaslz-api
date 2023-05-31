@@ -14,8 +14,15 @@ export default {
 	phone: DATA_PHONE,
 	introduction:
 		"Self-taught enthusiast and crazy about technology, I work in web technologies since 2011, from backend to frontend but also joining backend and mobile environments in parallel projects. I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.",
-	coverLetter:
-		"I'm a tech geek, with more than 10 years of experience as a FullStack software developer.\n\nEnthusiastic and proactive, I have an entrepreneurial mindset, always involved in some side projects in my free time to keep learning with a example and discover new challenges.\n\nSkilled in multiple technologies and platforms, I am able to adapt to the needs of the team.\n\nI am empathetic with my team mates, I am always open and happy to help, I like to be a mentor when needed and, I like to be mentored as well.\n\nI like to be aware of the product as a whole. I like to understand the business model and the team's goals, to be more productive and proactively think something about what could be a benefit for the user or the project.",
+	coverLetter: `I'm a tech geek, with more than 10 years of experience as a FullStack software developer.
+
+		Enthusiastic and proactive, I have an entrepreneurial mindset, always involved in some side projects in my free time to keep learning with a example and discover new challenges.
+
+		Skilled in multiple technologies and platforms, I am able to adapt to the needs of the team.
+
+		I am empathetic with my team mates, I am always open and happy to help, I like to be a mentor when needed and, I like to be mentored as well.
+
+		I like to be aware of the product as a whole. I like to understand the business model and the team's goals, to be more productive and proactively think something about what could be a benefit for the user or the project.`,
 	keywords: [
 		"javascript",
 		"vue",
@@ -243,7 +250,7 @@ export default {
 			],
 			public: true,
 			npm: "https://www.npmjs.com/package/@dimaslz/ng-heroicons",
-			url: "https://ng-heroicons.dimaslz.dev/",
+			url: "https://ng-heroicons.dimaslz.dev",
 			repository: ["https://github.com/dimaslz/ng-heroicons"],
 		},
 		{
@@ -253,7 +260,7 @@ export default {
 			keywords: ["typescript", "preact", "nodejs", "vitejs", "tools", "api", "tailwindcss"],
 			public: false,
 			npm: null,
-			url: "https://randomdata.loremapi.io/",
+			url: "https://randomdata.loremapi.io",
 			repository: [],
 		},
 		{
