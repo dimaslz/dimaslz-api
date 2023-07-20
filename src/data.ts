@@ -12,17 +12,20 @@ export default {
 	},
 	alias: "dimaslz",
 	phone: DATA_PHONE,
-	introduction:
-		"Self-taught enthusiast and crazy about technology, I work in web technologies since 2011, from backend to frontend but also joining backend and mobile environments in parallel projects. I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.",
-	coverLetter: `I'm a tech geek, with more than 10 years of experience as a FullStack software developer.
+	introduction: `Enthusiastic self-taught and crazy about technology, I work in web technologies since 2011, today mainly focused on frontend technologies but also enjoying backend and mobile environments in side projects.
 
-		Enthusiastic and proactive, I have an entrepreneurial mindset, always involved in some side projects in my free time to keep learning with a example and discover new challenges.
+		I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.
 
-		Skilled in multiple technologies and platforms, I am able to adapt to the needs of the team.
+		My top topics are cloud platforms, SAAS, tooling development, open source, learning, automation, React, Vue, Angular, Svelte, Typescript, Kubernetes, Docker, Github Actions, AWS, Testing (unit, integration, e2e), nodejs and more. I'm open to listen, learn and code!`,
+	coverLetter: `I am a tech geek with more than 10 years of experience as a FullStack software developer.
 
-		I am empathetic with my team mates, I am always open and happy to help, I like to be a mentor when needed and, I like to be mentored as well.
+	Enthusiastic and proactive, I have an entrepreneurial mindset, always involved in some side projects in my free time to keep learning and discover new challenges.
 
-		I like to be aware of the product as a whole. I like to understand the business model and the team's goals, to be more productive and proactively think something about what could be a benefit for the user or the project.`,
+	I am able to adapt to the needs of the team. I am empathetic and aware of the product as a whole. I like to understand the business model and the team's goals to be more productive and think proactively about what could benefit the team, user or the project. I enjoy learning, working and contributing with my code and my positive and supportive attitude.
+
+	In my previous positions, I faced challenges from the front line as a leader of around 14 developers, aiming to provide the best support to the teams and the company. I am proactive in finding solutions and making product improvements without waiting for instructions, always validating changes with the team. I strive to provide solutions while maintaining a pragmatic mindset, finding the balance between best practices, value and quality.
+
+	I have experience working in cross-functional teams divided into multiple squads, and am fully capable of working remotely. Being empathetic, transparent and helpful whenever I can are at the core of my principles. I enjoy mentoring when needed and also appreciate being mentored.`,
 	keywords: [
 		"javascript",
 		"vue",
