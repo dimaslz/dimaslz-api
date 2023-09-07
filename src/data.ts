@@ -233,7 +233,7 @@ export default {
 				"Learning database management and software development in python, java and visual basic",
 		},
 	],
-	status: ["Senior Frontend Engineer at Backmarket", "Working at MySelf"],
+	status: ["Working at MySelf: open as freelance, mentor and consultant"],
 	interests:
 		"Entrepreneurship, business, web development, mobile, backend, devops, product, management, ...",
 	projects: [
