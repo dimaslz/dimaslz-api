@@ -84,7 +84,7 @@
             key: "${{ github.sha }}-cache"
         - 
           name: "Build docker image"
-          run: "wget https://statics.dimaslz.dev/fito/docker/dockerfile-simple-node.docker.tmpl -O Dockerfile.tmpl\n    export NODE_IMAGE=\"18.17-alpine\"\n    export ARGS=\"ARG DATA_EMAIL\nARG DATA_PHONE\"\n    export RUN_COMMAND=\"\\\"yarn\\\", \\\"start\\\"\"\n    export SOURCE=\"./dist\"\n    export FILES=\"COPY node_modules /app/node_modules\nCOPY package.json /app/package.json\"\n    envsubst < Dockerfile.tmpl > Dockerfile\n    docker build . --build-arg DATA_EMAIL=\"${{secrets.FITO_ENV_DATA_EMAIL}}\" --build-arg DATA_PHONE=\"${{secrets.FITO_ENV_DATA_PHONE}}\" -t ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_image"
+          run: "wget https://statics.dimaslz.dev/fito/docker/dockerfile-simple-node.docker.tmpl -O Dockerfile.tmpl\n    export NODE_IMAGE=\"18.17-alpine\"\n    export ARGS=\"ARG DATA_EMAIL\nARG DATA_PHONE\"\n    export RUN_COMMAND=\"\\\"yarn\\\", \\\"start\\\"\"\n    export SOURCE=\"./dist\"\n    export PORT=\"EXPOSE 3000\"\n    export FILES=\"COPY node_modules /app/node_modules\nCOPY package.json /app/package.json\"\n    envsubst < Dockerfile.tmpl > Dockerfile\n    docker build . --build-arg DATA_EMAIL=\"${{secrets.FITO_ENV_DATA_EMAIL}}\" --build-arg DATA_PHONE=\"${{secrets.FITO_ENV_DATA_PHONE}}\" -t ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_image"
         - 
           name: "prepare connection"
           run: "mkdir -p ~/.ssh/\necho \"$SSH_KEY\" > ~/.ssh/prod.key\nchmod 600 ~/.ssh/prod.key\ncat >>~/.ssh/config <<END\nHost prod\n  HostName $SSH_HOST\n  User $SSH_USER\n  IdentityFile ~/.ssh/prod.key\n  StrictHostKeyChecking no\nEND"
@@ -122,7 +122,7 @@
           run: "currentImageId=`ssh prod \"docker images --format=\\\"{{.Repository}} {{.ID}}\\\" | grep \\\"_api.dimaslz.dev\\\" || echo \\\"\\\"\"` && currentImageId=`echo $currentImageId | grep -Po \"\\s(.*?$)\" | tr -d \"\\n\" || echo \"\"` && echo \"currentImageId=$currentImageId\" >> $GITHUB_ENV"
         - 
           name: "run"
-          run: "newContainerID=`ssh prod \"docker run --name ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_container -e DATA_EMAIL=\\\"${{secrets.FITO_ENV_DATA_EMAIL}}\\\" -e DATA_PHONE=\\\"${{secrets.FITO_ENV_DATA_PHONE}}\\\" -p 3000 -d ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_image\"` && echo \"newContainerID=$newContainerID\" >> $GITHUB_ENV"
+          run: "newContainerID=`ssh prod \"docker run --name ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_container -e DATA_EMAIL=\\\"${{secrets.FITO_ENV_DATA_EMAIL}}\\\" -e DATA_PHONE=\\\"${{secrets.FITO_ENV_DATA_PHONE}}\\\" -d ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_image\"` && echo \"newContainerID=$newContainerID\" >> $GITHUB_ENV"
         - 
           name: "get container IP"
           run: "newContainerIP=`ssh prod \"docker inspect -f \\\"{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}\\\" ${{ env.newContainerID }}\"` && echo \"newContainerIP=$newContainerIP\" >> $GITHUB_ENV"
