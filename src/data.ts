@@ -17,15 +17,19 @@ export default {
 		I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.
 
 		My top topics are cloud platforms, SAAS, tooling development, open source, learning, automation, React, Vue, Angular, Svelte, Typescript, Kubernetes, Docker, Github Actions, AWS, Testing (unit, integration, e2e), nodejs and more. I'm open to listen, learn and code!`,
-	coverLetter: `I am a tech geek with more than 10 years of experience as a FullStack software developer.
+	coverLetter: `I am a passionate technology professional with over a decade of experience in Full Stack development. I bring an entrepreneurial spirit and a continuous drive for learning to each project I undertake.
 
-	Enthusiastic and proactive, I have an entrepreneurial mindset, always involved in some side projects in my free time to keep learning and discover new challenges.
+	In my quest for new challenges, I actively engage in side projects that sharpen my skills and expand my understanding of emerging technologies.
 
-	I am able to adapt to the needs of the team. I am empathetic and aware of the product as a whole. I like to understand the business model and the team's goals to be more productive and think proactively about what could benefit the team, user or the project. I enjoy learning, working and contributing with my code and my positive and supportive attitude.
+	My ability to empathize with team needs and grasp the holistic view of our products allows me to contribute effectively to our collective goals. Through a supportive and positive approach, I not only enhance the codebase but also the team dynamic.
+
+	As a previous leader of around 14-member development team, I've spearheaded initiatives to optimize team support and company productivity. My proactive stance on problem-solving, coupled with a pragmatic balance between best practices and practical value, has consistently led to improvements in product quality.
 
 	In my previous positions, I faced challenges from the front line as a leader of around 14 developers, aiming to provide the best support to the teams and the company. I am proactive in finding solutions and making product improvements without waiting for instructions, always validating changes with the team. I strive to provide solutions while maintaining a pragmatic mindset, finding the balance between best practices, value and quality.
 
-	I have experience working in cross-functional teams divided into multiple squads, and am fully capable of working remotely. Being empathetic, transparent and helpful whenever I can are at the core of my principles. I enjoy mentoring when needed and also appreciate being mentored.`,
+	With a history of working in diverse, cross-functional teams, I am well-prepared for remote collaboration. My core values include empathy, transparency, and a willingness to both mentor and learn.
+
+	I am excited about the possibility of bringing my blend of experience, innovation, and collaborative spirit to the company. I look forward to the opportunity to discuss how my background, skills, and enthusiasms can contribute to your exciting product.`,
 	keywords: [
 		"javascript",
 		"vue",
