@@ -55,6 +55,30 @@ export default {
 	],
 	jobs: [
 		{
+			title: "Lead Software Engineer",
+			company: "The Knot Worldwide",
+			date: {
+				from: {
+					month: "Dec",
+					year: "2023",
+				},
+				to: {
+					month: "current",
+					year: "current",
+				},
+			},
+			baseOn: {
+				country: "Spain",
+				city: "Barcelona",
+				mode: "remote",
+			},
+			description: `Servant Leader supporting my squad and anybody around me.
+			Improve productivity by automating the process as much as possible, guiding and driving best practices under a pragmatic mindset.
+
+			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, ...
+			`,
+		},
+		{
 			title: "Full Stack Engineer",
 			company: "MySelf",
 			date: {
