@@ -2,11 +2,13 @@ import { Request, Response } from "express";
 import httpStatus from "http-status";
 import camelCase from "lodash.camelcase";
 
+import type { DimaslzData } from "@/types";
+
 import { Controller } from "./Controller";
 
 export default class HomeGetController implements Controller {
 	async run(req: Request<{ attribute: string }, never, never, never>, res: Response) {
-		const { default: data }: any = await import("../data");
+		const { default: data }: { default: DimaslzData } = await import("../data");
 
 		const { attribute } = req.params;
 

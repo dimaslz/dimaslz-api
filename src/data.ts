@@ -1,3 +1,5 @@
+import { DimaslzData } from "@/types";
+
 /* eslint-disable max-len */
 const { DATA_EMAIL, DATA_PHONE } = process.env;
 
@@ -75,8 +77,23 @@ export default {
 			description: `Servant Leader supporting my squad and anybody around me.
 			Improve productivity by automating the process as much as possible, guiding and driving best practices under a pragmatic mindset.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, ...
+			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
 			`,
+			keywords: [
+				"nextjs",
+				"node",
+				"react",
+				"aws",
+				"akamai",
+				"docker",
+				"kubernetes",
+				"cypress",
+				"github",
+				"leadership",
+				"redis",
+				"mysql",
+				"ci/cd",
+			],
 		},
 		{
 			title: "Full Stack Engineer",
@@ -98,8 +115,30 @@ export default {
 			},
 			description: `Consultant, Site projects, Learning and Mentoring
 
-			Stack: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, ...
+			Stack: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
 			`,
+			keywords: [
+				"vue",
+				"vue3",
+				"pinia",
+				"typescript",
+				"nuxt",
+				"next",
+				"jest",
+				"testing library",
+				"playwright",
+				"cypress",
+				"node",
+				"angular",
+				"docker",
+				"vite",
+				"socketio",
+				"mongodb",
+				"mysql",
+				"redis",
+				"cloudflare",
+				"learning",
+			],
 		},
 		{
 			title: "Senior Frontend Engineer",
@@ -132,6 +171,7 @@ export default {
 				"cypress",
 				"SOLID",
 				"cloudflare",
+				"learning",
 			],
 		},
 		{
@@ -154,7 +194,7 @@ export default {
 			},
 			description:
 				"Personal break to focus in my mental health, think, study and work on my side projects and open-source. Self-training to improve as a professional and to be ready for the next challenge.",
-			keywords: [],
+			keywords: ["learning"],
 		},
 		{
 			title: "Frontend Engineer - Lead/Manager",
@@ -199,6 +239,7 @@ export default {
 				"scrum",
 				"nuxt",
 				"management",
+				"learning",
 			],
 		},
 		{
@@ -374,4 +415,4 @@ export default {
 			repository: ["https://github.com/dimaslz/dimaslz.io"],
 		},
 	],
-};
+} as DimaslzData;
