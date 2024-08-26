@@ -30,7 +30,7 @@
           name: "Set up NodeJS"
           uses: "actions/setup-node@v4"
           with: 
-            node-version: "18.17"
+            node-version: "22.6"
         - 
           name: "Install yarn"
           run: "npm install -g yarn"
@@ -58,7 +58,7 @@
           name: "Set up NodeJS"
           uses: "actions/setup-node@v4"
           with: 
-            node-version: "18.17"
+            node-version: "22.6"
         - 
           name: "Build application"
           run: "yarn build"
@@ -81,7 +81,7 @@
             key: "${{ github.sha }}-cache"
         - 
           name: "Build docker image"
-          run: "wget https://statics.dimaslz.dev/fito/docker/dockerfile-standard.docker.tmpl -O Dockerfile.tmpl\n    export FROM=\"node:18.17-alpine\"\n    export ARGS=\"ARG DATA_EMAIL\nARG DATA_PHONE\"\n    export SOURCE=\"./dist\"\n    export FILES=\"COPY node_modules /app/node_modules\nCOPY package.json /app/package.json\"\n    export PORT=\"3000\"\n    export RUN_COMMAND=\"\\\"yarn\\\", \\\"start\\\"\"\n    envsubst < Dockerfile.tmpl > Dockerfile\n    docker build . --build-arg DATA_EMAIL=\"${{secrets.FITO_ENV_DATA_EMAIL}}\" --build-arg DATA_PHONE=\"${{secrets.FITO_ENV_DATA_PHONE}}\" -t ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_image"
+          run: "wget https://statics.dimaslz.dev/fito/docker/dockerfile-standard.docker.tmpl -O Dockerfile.tmpl\n    export FROM=\"node:22.6-alpine\"\n    export ARGS=\"ARG DATA_EMAIL\nARG DATA_PHONE\"\n    export SOURCE=\"./dist\"\n    export FILES=\"COPY node_modules /app/node_modules\nCOPY package.json /app/package.json\"\n    export PORT=\"3000\"\n    export RUN_COMMAND=\"\\\"yarn\\\", \\\"start\\\"\"\n    envsubst < Dockerfile.tmpl > Dockerfile\n    docker build . --build-arg DATA_EMAIL=\"${{secrets.FITO_ENV_DATA_EMAIL}}\" --build-arg DATA_PHONE=\"${{secrets.FITO_ENV_DATA_PHONE}}\" -t ${{ env.ATTEMPTS }}_${{ github.sha }}_api.dimaslz.dev_production_image"
         - 
           name: "prepare connection"
           run: "mkdir -p ~/.ssh/\necho \"$SSH_KEY\" > ~/.ssh/prod.key\nchmod 600 ~/.ssh/prod.key\ncat >>~/.ssh/config <<END\nHost prod\n  HostName $SSH_HOST\n  User $SSH_USER\n  IdentityFile ~/.ssh/prod.key\n  StrictHostKeyChecking no\nEND"
@@ -132,7 +132,13 @@
           run: "echo \"container is not running\" && exit 1"
         - 
           name: "setup nginx config"
-          run: "wget https://statics.dimaslz.dev/fito/nginx/static-config.nginx.tmpl -O nginx.tmpl\n\texport SERVER_NAME=\"api.dimaslz.dev\"\n\texport SERVER_URL=\"http://${{ env.newContainerIP }}:${{ env.newContainerPort }}\"\n\tenvsubst < nginx.tmpl > api.dimaslz.dev\n\tscp api.dimaslz.dev prod:/etc/nginx/sites-enabled/api.dimaslz.dev\n\tssh prod \"nginx -t && systemctl restart nginx\""
+          run: "wget https://statics.dimaslz.dev/fito/nginx/static-config.nginx-certbot-1-step.tmpl -O nginx.tmpl\n\texport SERVER_NAME=\"api.dimaslz.dev\"\n\texport SERVER_URL=\"http://${{ env.newContainerIP }}:${{ env.newContainerPort }}\"\n\tenvsubst < nginx.tmpl > api.dimaslz.dev\n\tscp api.dimaslz.dev prod:/etc/nginx/sites-enabled/api.dimaslz.dev\n\tssh prod \"nginx -t && systemctl restart nginx\""
+        - 
+          name: "create certificates"
+          run: "ssh prod \"mkdir -p /usr/share/nginx/html/api.dimaslz.dev && echo \\\"1\\\" | certbot certonly --webroot -w /usr/share/nginx/html/api.dimaslz.dev -d api.dimaslz.dev --email ${{ secrets.FITO_ENV_USER_EMAIL }} --agree-tos --no-eff-email && nginx -t && systemctl restart nginx\""
+        - 
+          name: "setup nginx config"
+          run: "wget https://statics.dimaslz.dev/fito/nginx/static-config.nginx-certbot-2-step.tmpl -O nginx.tmpl\n\texport SERVER_NAME=\"api.dimaslz.dev\"\n\texport SERVER_URL=\"http://${{ env.newContainerIP }}:${{ env.newContainerPort }}\"\n\tenvsubst < nginx.tmpl > api.dimaslz.dev\n\tscp api.dimaslz.dev prod:/etc/nginx/sites-enabled/api.dimaslz.dev\n\tssh prod \"nginx -t && systemctl restart nginx\""
         - 
           name: "Container is not running"
           if: "${{ failure() }}"
