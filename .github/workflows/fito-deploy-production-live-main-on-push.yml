@@ -28,7 +28,7 @@
             ref: "main"
         - 
           name: "Set up NodeJS"
-          uses: "actions/setup-node@v4"
+          uses: "actions/setup-node@v5"
           with: 
             node-version: "22.21"
         - 
@@ -53,7 +53,7 @@
             key: "${{ github.sha }}-cache"
         - 
           name: "Set up NodeJS"
-          uses: "actions/setup-node@v4"
+          uses: "actions/setup-node@v5"
           with: 
             node-version: "22.21"
         - 
