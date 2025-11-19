@@ -53,7 +53,7 @@ describe("Home get controller: GET /", () => {
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
-		expect(result.data.length).toBe(4);
+		expect(result.data.length).toBe(7);
 
 		expect(result).toMatchSnapshot();
 	});

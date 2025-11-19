@@ -54,8 +54,50 @@ export default {
 		"kubernetes",
 		"docker",
 		"tailwindcss",
+		"management",
+		"leadership",
 	],
 	jobs: [
+		{
+			title: "Engineering Manager (hands-on) & Lead Software Engineer",
+			company: "The Knot Worldwide",
+			promotion: true,
+			date: {
+				from: {
+					month: "Apr",
+					year: "2025",
+				},
+				to: {
+					month: "current",
+					year: "current",
+				},
+			},
+			baseOn: {
+				country: "Spain",
+				city: "Barcelona",
+				mode: "hybrid",
+			},
+			description: `I continue to work as a servant leader, but I also help my Team grow in their professional careers, doing reviews, O3 mettings and other management tasks.
+
+			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			`,
+			keywords: [
+				"nextjs",
+				"node",
+				"react",
+				"aws",
+				"akamai",
+				"docker",
+				"kubernetes",
+				"cypress",
+				"github",
+				"leadership",
+				"redis",
+				"mysql",
+				"ci/cd",
+				"management",
+			],
+		},
 		{
 			title: "Lead Software Engineer",
 			company: "The Knot Worldwide",
@@ -65,8 +107,8 @@ export default {
 					year: "2023",
 				},
 				to: {
-					month: "current",
-					year: "current",
+					month: "Apr",
+					year: "2025",
 				},
 			},
 			baseOn: {
@@ -175,7 +217,7 @@ export default {
 			],
 		},
 		{
-			title: "Sabbatical Year",
+			title: "Sabbatical Gap",
 			company: null,
 			date: {
 				from: {
@@ -197,7 +239,7 @@ export default {
 			keywords: ["learning"],
 		},
 		{
-			title: "Frontend Engineer - Lead/Manager",
+			title: "Engineering Manager (hands-on) & Lead Frontend Engineer",
 			company: "Ubeeqo (Europcar Mobility Group)",
 			date: {
 				from: {

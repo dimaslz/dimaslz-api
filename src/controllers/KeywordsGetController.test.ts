@@ -20,7 +20,7 @@ describe("Keywords get controller: GET /keywords", () => {
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
-		expect(result.data.length).toBe(47);
+		expect(result.data.length).toBe(56);
 
 		expect(result).toMatchSnapshot();
 	});
