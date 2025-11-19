@@ -25,10 +25,10 @@ export class Server {
 		this.express.use(helmet.noSniff());
 		this.express.use(helmet.hidePoweredBy());
 		this.express.use(helmet.frameguard({ action: "deny" }));
-		this.express.use(compress());
+		(this.express as any).use(compress());
 		const router = Router();
 		router.use(cors());
-		router.use(errorHandler());
+		(router as any).use(errorHandler());
 		this.express.use(router);
 		registerRoutes(router);
 
