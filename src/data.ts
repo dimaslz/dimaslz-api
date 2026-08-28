@@ -14,11 +14,11 @@ export default {
 	},
 	alias: "dimaslz",
 	phone: DATA_PHONE,
-	introduction: `Enthusiastic self-taught and crazy about technology, I work in web technologies since 2011, today mainly focused on frontend technologies but also enjoying backend and mobile environments in side projects.
+	introduction: `Software & Engineering Manager (Hands-on) with over a decade of experience on software engineering, deeply involved in architecture and software development. I specialize in transforming engineering organizations through technical leadership, platform modernization, automation, and a strong engineering culture.
 
-		I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.
+My approach combines strategic thinking with hands-on execution. I enjoy solving complex technical challenges, mentoring engineers, improving developer experience, and driving initiatives that increase product quality, operational efficiency, and business impact. Whether leading teams through organizational change, modernizing legacy systems, improving application performance, or establishing engineering standards, I focus on delivering sustainable solutions with measurable results.
 
-		My top topics are cloud platforms, SAAS, tooling development, open source, learning, automation, React, Vue, Angular, Svelte, Typescript, Kubernetes, Docker, Github Actions, AWS, Testing (unit, integration, e2e), nodejs and more. I'm open to listen, learn and code!`,
+I believe the best engineering leaders stay close to both the product and the people. I lead by example, promote ownership and collaboration, and create environments where engineers can grow while delivering reliable, scalable software that makes a real difference for customers.`,
 	coverLetter: `I am a passionate technology professional with over a decade of experience in Full Stack development. I bring an entrepreneurial spirit and a continuous drive for learning to each project I undertake.
 
 	In my quest for new challenges, I actively engage in side projects that sharpen my skills and expand my understanding of emerging technologies.
@@ -77,25 +77,87 @@ export default {
 				city: "Barcelona",
 				mode: "hybrid",
 			},
-			description: `I continue to work as a servant leader, but I also help my Team grow in their professional careers, doing reviews, O3 mettings and other management tasks.
+			description: `Hands-on Engineering Manager with a strong platform engineering background who combines technical depth, people leadership, type coding, and product ownership. Experienced leading engineering organizations through periods of change while modernizing platforms, improving performance, driving engineering excellence, mentoring teams, and delivering measurable business outcomes as possible.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			The following are some of the highlights, got thanks to my team, during my time as Engineering Manager and Lead Software Engineer:
+
+			ENGINEERING LEADERSHIP
+			- Successfully led engineering during a period of organizational transition, assuming responsibilities beyond the role without formal direction.
+			- Managed and mentored a team of engineers while remaining an active technical contributor.
+			- Extended leadership beyond direct reports by mentoring engineers across teams
+			- Built trust through a servant leadership approach, staying close to engineering teams and leading by example.
+
+			OWNERSHIP & ORGANIZATIONAL IMPACT
+			- Took ownership of critical engineering operations, tooling, budgets, and day-to-day engineering management during leadership gaps.
+			- Helped maintain team engagement and delivery despite challenges, while protecting team performance and retaining engineering focus.
+			- Identified, prioritized, and advocated for technical debt as part of engineering planning and OKRs.
+			- Proactively drove engineering improvements without waiting for direction.
+
+			TEAM IMPACT & TECHNICAL LEADERSHIP
+			- Modernization of the engineering platform across multiple repositories.
+			- Improved security posture and reducing infrastructure footprint (~15% image size reduction).
+			- Migration of a legacy to latest engine version, enabling long-term maintainability and reducing dependency risks.
+			- Championed engineering standards, CI/CD improvements, and reusable GitHub Actions across repositories.
+			- Setup strategy for migrating end-to-end testing from Cypress to a centralized Playwright monorepo.
+			- Established secure coding practices and engineering standards through technical leadership.
+
+			PRODUCT & PERFORMANCE IMPACT
+			- Reduced application page size from ~40 MB to ~9 MB.
+			- Reduced network requests from ~145 to ~50.
+			- Improved page load time from ~3s to ~1.5s.
+			- Reduced homepage payload from ~25 MB to ~3 MB through image optimization.
+			- Automated operational workflows through Contentful, eliminating recurring manual BAU tasks.
+			- Contributed to infrastructure optimization resulting in approximately important annual cloud savings.
+			- Improved application readiness for SEO, SSR, and future AI/LLM initiatives.
+
+			DELIVERY
+			- Delivered strategic product initiatives.
+			- Successfully delivered high-impact projects despite organizational instability and limited engineering capacity.
+			- Encouraged teams to validate ideas through proofs of concept before committing to full implementation.
+
+			MANAGEMENT & MENTORING
+			- Conducted regular 1:1s, coaching, and career mentoring.
+			- Mentored engineers outside direct reporting lines.
+			- Helped engineers increase ownership, visibility, and technical impact.
+			- Balanced people management with hands-on software engineering.
+
+			Skills: Engineering Management, Hands-on Engineering Manager, Technical Leadership, Software Architecture, Full Stack Engineering, Platform Engineering, Developer Experience (DevEx), Performance Optimization, CI/CD, GitHub Actions, Next.js, React, TypeScript, Node.js, Redis, MySql, PostgreSQL, AWS, Docker, Akamai, Kubernetes, Playwright, Testing Strategy, Engineering Excellence, Technical Debt Management, Staff Engineering, Team Leadership, Mentoring, Cross-functional Leadership, Agile Delivery, Engineering Strategy, Platform Modernization, Security, Observability.
 			`,
 			keywords: [
-				"nextjs",
-				"node",
-				"react",
-				"aws",
-				"akamai",
-				"docker",
-				"kubernetes",
-				"cypress",
-				"github",
-				"leadership",
-				"redis",
-				"mysql",
-				"ci/cd",
-				"management",
+				"Engineering Management",
+				"Hands-on Engineering Manager",
+				"Technical Leadership",
+				"Software Architecture",
+				"Full Stack Engineering",
+				"Platform Engineering",
+				"Developer Experience (DevEx)",
+				"Performance Optimization",
+				"CI/CD",
+				"GitHub Actions",
+				"Next.js",
+				"React",
+				"TypeScript",
+				"Node.js",
+				"Redis",
+				"MySql",
+				"PostgreSQL",
+				"AWS",
+				"Docker",
+				"Akamai",
+				"Kubernetes",
+				"Playwright",
+				"Testing Strategy",
+				"Engineering Excellence",
+				"Technical Debt Management",
+				"Staff Engineering",
+				"Team Leadership",
+				"Mentoring",
+				"Cross-functional Leadership",
+				"Agile Delivery",
+				"Engineering Strategy",
+				"Platform Modernization",
+				"Security",
+				"Observability",
 			],
 		},
 		{
@@ -119,7 +181,7 @@ export default {
 			description: `Servant Leader supporting my squad and anybody around me.
 			Improve productivity by automating the process as much as possible, guiding and driving best practices under a pragmatic mindset.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			skills: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
 			`,
 			keywords: [
 				"nextjs",
@@ -157,7 +219,7 @@ export default {
 			},
 			description: `Consultant, Site projects, Learning and Mentoring
 
-			Stack: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
+			skills: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
 			`,
 			keywords: [
 				"vue",
@@ -202,7 +264,7 @@ export default {
 			},
 			description: `Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
 
-			Stack: Vue2, Nuxt, Jest, Testing Library...`,
+			skills: Vue2, Nuxt, Jest, Testing Library...`,
 			keywords: [
 				"vue2",
 				"vuex",
@@ -269,7 +331,7 @@ export default {
 			- Develop and define e2e implementation.
 			- Recruiting frontend and QA team.
 
-			Stack: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.`,
+			skills: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.`,
 			keywords: [
 				"vue",
 				"docker",
@@ -351,6 +413,7 @@ export default {
 		{
 			name: "ng-heroicons",
 			description: "An Angular components library to use Heroicons.com in your Angular projects.",
+			skills: ["typescript", "javascript", "angular", "nodejs", "tailwindcss"],
 			stack: ["typescript", "javascript", "angular", "nodejs", "tailwindcss"],
 			keywords: [
 				"typescript",
@@ -370,6 +433,7 @@ export default {
 		{
 			name: "Randomdata",
 			description: "A tool to create mock Api responses with your custom schema.",
+			skills: ["typescript", "preact", "nodejs", "vitejs", "tailwindcss"],
 			stack: ["typescript", "preact", "nodejs", "vitejs", "tailwindcss"],
 			keywords: ["typescript", "preact", "nodejs", "vitejs", "tools", "api", "tailwindcss"],
 			public: false,
@@ -380,6 +444,7 @@ export default {
 		{
 			name: "Framework icon builder",
 			description: "A tool to create a framework icon component from a SVG",
+			skills: ["nextjs", "nodejs", "tailwindcss"],
 			stack: ["nextjs", "nodejs", "tailwindcss"],
 			keywords: ["nextjs", "nodejs", "tailwindcss", "tools"],
 			public: false,
@@ -391,6 +456,7 @@ export default {
 			name: "Fito deploy",
 			description: "Deploy any project easily, like Vercel or Heroku but in your self hosting.",
 			url: "https://fito-deploy.dimaslz.dev",
+			skills: ["vitejs", "typescript", "vue3", "pinia", "tailwindcss", "docker", "github actions"],
 			stack: ["vitejs", "typescript", "vue3", "pinia", "tailwindcss", "docker", "github actions"],
 			keywords: [
 				"vitejs",
@@ -410,6 +476,7 @@ export default {
 			name: "Loremapi",
 			description: "Mock and document your Api's",
 			url: "https://loremapi.io",
+			skills: ["angular", "nodejs", "tailwindcss", "typescript"],
 			stack: ["angular", "nodejs", "tailwindcss", "typescript"],
 			keywords: ["angular", "nodejs", "tailwindcss", "typescript", "tools", "api", "developers"],
 			public: false,
@@ -420,6 +487,7 @@ export default {
 			name: "cv.dimaslz.dev",
 			description: "My online CV",
 			url: "https://cv.dimaslz.dev",
+			skills: ["svelte", "tailwindcss", "typescript"],
 			stack: ["svelte", "tailwindcss", "typescript"],
 			keywords: ["svelte", "tailwindcss", "typescript", "cv", "landing"],
 			public: true,
@@ -430,6 +498,7 @@ export default {
 			name: "api.dimaslz.dev",
 			description: "My professional info by API",
 			url: "https://api.dimaslz.dev",
+			skills: ["nodejs", "typescript"],
 			stack: ["nodejs", "typescript"],
 			keywords: ["nodejs", "typescript", "cv", "api"],
 			public: true,
@@ -440,6 +509,7 @@ export default {
 			name: "dimaslz.dev",
 			description: "Dev landing",
 			url: "https://dimaslz.dev",
+			skills: ["javascript", "tailwindcss"],
 			stack: ["javascript", "tailwindcss"],
 			keywords: ["javascript", "tailwindcss", "landing"],
 			public: true,
@@ -450,6 +520,7 @@ export default {
 			name: "dimaslz.com",
 			description: "Profesional landing profile",
 			url: "https://dimaslz.com",
+			skills: ["nextjs", "typescript", "tailwindcss"],
 			stack: ["nextjs", "typescript", "tailwindcss"],
 			keywords: ["nextjs", "typescript", "tailwindcss"],
 			public: true,
