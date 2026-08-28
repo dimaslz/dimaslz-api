@@ -132,7 +132,7 @@
           run: "wget https://statics.dimaslz.dev/fito/nginx/static-config.nginx-certbot-1-step.tmpl -O nginx.tmpl\n\texport SERVER_NAME=\"api.dimaslz.dev\"\n\texport SERVER_URL=\"http://${{ env.newContainerIP }}:${{ env.newContainerPort }}\"\n\tenvsubst < nginx.tmpl > api.dimaslz.dev\n\tscp api.dimaslz.dev prod:/etc/nginx/sites-enabled/api.dimaslz.dev\n\tssh prod \"nginx -t && systemctl restart nginx\""
         - 
           name: "create certificates"
-          run: "ssh prod \"mkdir -p /usr/share/nginx/html/api.dimaslz.dev && echo \\\"1\\\" | certbot certonly --webroot -w /usr/share/nginx/html/api.dimaslz.dev -d api.dimaslz.dev --email ${{ secrets.FITO_ENV_USER_EMAIL }} --agree-tos --no-eff-email && nginx -t && systemctl restart nginx\""
+          run: "ssh prod \"mkdir -p /usr/share/nginx/html/api.dimaslz.dev && echo \\\"1\\\" | certbot certonly --webroot -w /usr/share/nginx/html/api.dimaslz.dev -d api.dimaslz.dev --cert-name api.dimaslz.dev --key-type ecdsa --email ${{ secrets.FITO_ENV_USER_EMAIL }} --agree-tos --no-eff-email && nginx -t && systemctl restart nginx\""
         - 
           name: "setup nginx config"
           run: "wget https://statics.dimaslz.dev/fito/nginx/static-config.nginx-certbot-2-step.tmpl -O nginx.tmpl\n\texport SERVER_NAME=\"api.dimaslz.dev\"\n\texport SERVER_URL=\"http://${{ env.newContainerIP }}:${{ env.newContainerPort }}\"\n\tenvsubst < nginx.tmpl > api.dimaslz.dev\n\tscp api.dimaslz.dev prod:/etc/nginx/sites-enabled/api.dimaslz.dev\n\tssh prod \"nginx -t && systemctl restart nginx\""
