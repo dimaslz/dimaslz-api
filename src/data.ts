@@ -6,7 +6,7 @@ const { DATA_EMAIL, DATA_PHONE } = process.env;
 export default {
 	name: "Dimas",
 	lastname: "López Zurita",
-	title: "Senior Software Engineer",
+	title: "Engineering Manager, Leadership & Full-Stack Engineer",
 	email: DATA_EMAIL,
 	baseOn: {
 		country: "Spain",
