@@ -121,7 +121,7 @@ I believe the best engineering leaders stay close to both the product and the pe
 			- Helped engineers increase ownership, visibility, and technical impact.
 			- Balanced people management with hands-on software engineering.
 
-			Skills: Engineering Management, Hands-on Engineering Manager, Technical Leadership, Software Architecture, Full Stack Engineering, Platform Engineering, Developer Experience (DevEx), Performance Optimization, CI/CD, GitHub Actions, Next.js, React, TypeScript, Node.js, Redis, MySql, PostgreSQL, AWS, Docker, Akamai, Kubernetes, Playwright, Testing Strategy, Engineering Excellence, Technical Debt Management, Staff Engineering, Team Leadership, Mentoring, Cross-functional Leadership, Agile Delivery, Engineering Strategy, Platform Modernization, Security, Observability.
+			skills: Engineering Management, Hands-on Engineering Manager, Technical Leadership, Software Architecture, Full Stack Engineering, Platform Engineering, Developer Experience (DevEx), Performance Optimization, CI/CD, GitHub Actions, Next.js, React, TypeScript, Node.js, Redis, MySql, PostgreSQL, AWS, Docker, Akamai, Kubernetes, Playwright, Testing Strategy, Engineering Excellence, Technical Debt Management, Staff Engineering, Team Leadership, Mentoring, Cross-functional Leadership, Agile Delivery, Engineering Strategy, Platform Modernization, Security, Observability.
 			`,
 			keywords: [
 				"Engineering Management",
@@ -178,8 +178,21 @@ I believe the best engineering leaders stay close to both the product and the pe
 				city: "Barcelona",
 				mode: "remote",
 			},
-			description: `Servant Leader supporting my squad and anybody around me.
-			Improve productivity by automating the process as much as possible, guiding and driving best practices under a pragmatic mindset.
+			description: `- Led technical ownership across multiple product areas, combining architecture, platform engineering, delivery strategy, and team leadership.
+
+			- Designed and rolled out dynamic development environments and a new Continuous Delivery workflow, enabling engineers to independently test complex changes and perform multiple deployments per day.
+
+			- Built internal developer tooling and CI/CD automation covering deployments, release management, changelogs, GitHub workflows, and Slack notifications, significantly reducing manual engineering operations.
+
+			- Transformed release and deployment processes into self-service workflows, reducing dependency on individual engineers and increasing team autonomy and operational resilience.
+
+			- Led platform modernization initiatives including Node.js and React upgrades, monorepo foundations, CI/CD improvements, API architecture, and automated integration testing.
+
+			- Mentored engineers across technical ownership, communication, documentation, and leadership, progressively delegating responsibilities and increasing their autonomy and organizational impact.
+
+			- Established clearer engineering standards and technical sources of truth through architectural proposals, documentation, automation, and standardized development workflows.
+
+			- Operated with high autonomy through changing product priorities, proactively identifying technical opportunities and balancing short-term product delivery with long-term platform improvements.
 
 			skills: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
 			`,
