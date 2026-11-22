@@ -1,22 +1,21 @@
 # syntax=docker/dockerfile:1
-ARG NODE_VERSION=26
-
-FROM node:${NODE_VERSION}-alpine AS build
+FROM node:26-alpine AS build
+ENV HUSKY=0
+ENV COREPACK_HOME=/opt/corepack COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable
 WORKDIR /app
-RUN npm install -g pnpm@11.24.0
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN --mount=type=cache,target=/root/.local/share/pnpm/store pnpm install --frozen-lockfile
-COPY tsconfig*.json ./
-COPY src ./src
-RUN pnpm build
-RUN pnpm prune --prod
+COPY . .
+RUN pnpm install --frozen-lockfile
+RUN pnpm run build
 
-FROM node:${NODE_VERSION}-alpine
-ENV NODE_ENV=production
+FROM node:26-alpine AS runtime
+ENV NODE_ENV=production HOST=0.0.0.0 PORT=3000
+ENV COREPACK_HOME=/opt/corepack COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable
 WORKDIR /app
-COPY --from=build --chown=node:node /app/dist ./dist
-COPY --from=build --chown=node:node /app/node_modules ./node_modules
-COPY --from=build --chown=node:node /app/package.json ./package.json
+COPY --from=build --chown=node:node /app ./
 USER node
 EXPOSE 3000
-CMD ["node", "dist/start.js"]
+HEALTHCHECK --interval=10s --timeout=3s --start-period=20s --retries=3 \
+  CMD test ! -f /tmp/draining && wget -qO- http://127.0.0.1:3000/ >/dev/null || exit 1
+CMD ["pnpm","start"]
