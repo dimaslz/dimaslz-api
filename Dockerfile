@@ -13,6 +13,7 @@ ENV NODE_ENV=production HOST=0.0.0.0 PORT=3000
 ENV COREPACK_HOME=/opt/corepack COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN npm install -g corepack && corepack enable
 WORKDIR /app
+COPY --from=build --chown=node:node /opt/corepack /opt/corepack
 COPY --from=build --chown=node:node /app ./
 USER node
 EXPOSE 3000
