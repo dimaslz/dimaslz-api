@@ -123,12 +123,11 @@ jobs:
           tags: ghcr.io/dimaslz/dimaslz-api:${{ inputs.sha || github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          build-args: |
-            DATA_EMAIL=${{ vars.DATA_EMAIL }}
-            DATA_PHONE=${{ vars.DATA_PHONE }}
       - name: deploy
         env:
-          RUNTIME_KEYS: ""
+          RUNTIME_KEYS: "DATA_EMAIL,DATA_PHONE"
+          FITO_ENV_DATA_EMAIL: ${{ secrets.DATA_EMAIL || vars.DATA_EMAIL }}
+          FITO_ENV_DATA_PHONE: ${{ secrets.DATA_PHONE || vars.DATA_PHONE }}
           TARGET_SHA: "${{ inputs.sha || github.sha }}"
           IMAGE_DIGEST: ${{ steps.build.outputs.digest }}
           IMAGE_REUSED: ${{ steps.reuse.outputs.reuse }}
