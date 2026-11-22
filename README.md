@@ -3,10 +3,10 @@ This is my resume but from a Rest API.
 
 ## run the project
 
-- `yarn dev`: developer mode to work in local
-- `yarn build`: build `dist` folder
-- `yarn serve`: serve `dist` folder
-- `yarn test --verbose`: run all tests
+- `pnpm dev`: developer mode to work in local
+- `pnpm build`: build `dist` folder
+- `pnpm serve`: serve `dist` folder
+- `pnpm test`: run all tests
 
 ## how works
 

@@ -1,4 +1,4 @@
-import { Express } from "express";
+import type { Express } from "express";
 
 import HomeGetController from "@/controllers/HomeGetController";
 import KeywordsGetController from "@/controllers/KeywordsGetController";
@@ -11,5 +11,5 @@ export const register = (app: Express) => {
 
 	app.get("/projects", projectsGetController.run.bind(projectsGetController));
 	app.get("/keywords", keywordsGetController.run.bind(keywordsGetController));
-	app.get("/:attribute?", homeGetController.run.bind(homeGetController));
+	app.get("{/:attribute}", homeGetController.run.bind(homeGetController));
 };

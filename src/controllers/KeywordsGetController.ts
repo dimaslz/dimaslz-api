@@ -1,10 +1,10 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import httpStatus from "http-status";
 
-import { DimaslzData } from "@/types";
+import type { DimaslzData } from "@/types";
 
 import data from "../data";
-import { Controller } from "./Controller";
+import type { Controller } from "./Controller";
 
 export default class KeywordsGetController implements Controller {
 	async run(req: Request<{ attribute: string }, never, never, never>, res: Response) {

@@ -1,3 +1,3 @@
-import moduleAlias from "module-alias";
+import moduleAlias = require("module-alias");
 
 moduleAlias.addAlias("@", __dirname);

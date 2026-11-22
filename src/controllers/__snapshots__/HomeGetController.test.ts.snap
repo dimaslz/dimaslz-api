@@ -1,77 +1,152 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Home get controller: GET / should return the correct resource /email 1`] = `
-Object {
+exports[`Home get controller: GET / > should return the correct resource /email 1`] = `
+{
   "data": "your@email.com",
 }
 `;
 
-exports[`Home get controller: GET / should return the correct resource /jobs 1`] = `
-Object {
-  "data": Array [
-    Object {
-      "baseOn": Object {
+exports[`Home get controller: GET / > should return the correct resource /jobs 1`] = `
+{
+  "data": [
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "hybrid",
       },
       "company": "The Knot Worldwide",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "Apr",
           "year": "2025",
         },
-        "to": Object {
+        "to": {
           "month": "current",
           "year": "current",
         },
       },
-      "description": "I continue to work as a servant leader, but I also help my Team grow in their professional careers, doing reviews, O3 mettings and other management tasks.
+      "description": "Hands-on Engineering Manager with a strong platform engineering background who combines technical depth, people leadership, type coding, and product ownership. Experienced leading engineering organizations through periods of change while modernizing platforms, improving performance, driving engineering excellence, mentoring teams, and delivering measurable business outcomes as possible.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			The following are some of the highlights, got thanks to my team, during my time as Engineering Manager and Lead Software Engineer:
+
+			ENGINEERING LEADERSHIP
+			- Successfully led engineering during a period of organizational transition, assuming responsibilities beyond the role without formal direction.
+			- Managed and mentored a team of engineers while remaining an active technical contributor.
+			- Extended leadership beyond direct reports by mentoring engineers across teams
+			- Built trust through a servant leadership approach, staying close to engineering teams and leading by example.
+
+			OWNERSHIP & ORGANIZATIONAL IMPACT
+			- Took ownership of critical engineering operations, tooling, budgets, and day-to-day engineering management during leadership gaps.
+			- Helped maintain team engagement and delivery despite challenges, while protecting team performance and retaining engineering focus.
+			- Identified, prioritized, and advocated for technical debt as part of engineering planning and OKRs.
+			- Proactively drove engineering improvements without waiting for direction.
+
+			TEAM IMPACT & TECHNICAL LEADERSHIP
+			- Modernization of the engineering platform across multiple repositories.
+			- Improved security posture and reducing infrastructure footprint (~15% image size reduction).
+			- Migration of a legacy to latest engine version, enabling long-term maintainability and reducing dependency risks.
+			- Championed engineering standards, CI/CD improvements, and reusable GitHub Actions across repositories.
+			- Setup strategy for migrating end-to-end testing from Cypress to a centralized Playwright monorepo.
+			- Established secure coding practices and engineering standards through technical leadership.
+
+			PRODUCT & PERFORMANCE IMPACT
+			- Reduced application page size from ~40 MB to ~9 MB.
+			- Reduced network requests from ~145 to ~50.
+			- Improved page load time from ~3s to ~1.5s.
+			- Reduced homepage payload from ~25 MB to ~3 MB through image optimization.
+			- Automated operational workflows through Contentful, eliminating recurring manual BAU tasks.
+			- Contributed to infrastructure optimization resulting in approximately important annual cloud savings.
+			- Improved application readiness for SEO, SSR, and future AI/LLM initiatives.
+
+			DELIVERY
+			- Delivered strategic product initiatives.
+			- Successfully delivered high-impact projects despite organizational instability and limited engineering capacity.
+			- Encouraged teams to validate ideas through proofs of concept before committing to full implementation.
+
+			MANAGEMENT & MENTORING
+			- Conducted regular 1:1s, coaching, and career mentoring.
+			- Mentored engineers outside direct reporting lines.
+			- Helped engineers increase ownership, visibility, and technical impact.
+			- Balanced people management with hands-on software engineering.
+
+			skills: Engineering Management, Hands-on Engineering Manager, Technical Leadership, Software Architecture, Full Stack Engineering, Platform Engineering, Developer Experience (DevEx), Performance Optimization, CI/CD, GitHub Actions, Next.js, React, TypeScript, Node.js, Redis, MySql, PostgreSQL, AWS, Docker, Akamai, Kubernetes, Playwright, Testing Strategy, Engineering Excellence, Technical Debt Management, Staff Engineering, Team Leadership, Mentoring, Cross-functional Leadership, Agile Delivery, Engineering Strategy, Platform Modernization, Security, Observability.
 			",
-      "keywords": Array [
-        "nextjs",
-        "node",
-        "react",
-        "aws",
-        "akamai",
-        "docker",
-        "kubernetes",
-        "cypress",
-        "github",
-        "leadership",
-        "redis",
-        "mysql",
-        "ci/cd",
-        "management",
+      "keywords": [
+        "Engineering Management",
+        "Hands-on Engineering Manager",
+        "Technical Leadership",
+        "Software Architecture",
+        "Full Stack Engineering",
+        "Platform Engineering",
+        "Developer Experience (DevEx)",
+        "Performance Optimization",
+        "CI/CD",
+        "GitHub Actions",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Redis",
+        "MySql",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "Akamai",
+        "Kubernetes",
+        "Playwright",
+        "Testing Strategy",
+        "Engineering Excellence",
+        "Technical Debt Management",
+        "Staff Engineering",
+        "Team Leadership",
+        "Mentoring",
+        "Cross-functional Leadership",
+        "Agile Delivery",
+        "Engineering Strategy",
+        "Platform Modernization",
+        "Security",
+        "Observability",
       ],
       "promotion": true,
       "title": "Engineering Manager (hands-on) & Lead Software Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "The Knot Worldwide",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "Dec",
           "year": "2023",
         },
-        "to": Object {
+        "to": {
           "month": "Apr",
           "year": "2025",
         },
       },
-      "description": "Servant Leader supporting my squad and anybody around me.
-			Improve productivity by automating the process as much as possible, guiding and driving best practices under a pragmatic mindset.
+      "description": "- Led technical ownership across multiple product areas, combining architecture, platform engineering, delivery strategy, and team leadership.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			- Designed and rolled out dynamic development environments and a new Continuous Delivery workflow, enabling engineers to independently test complex changes and perform multiple deployments per day.
+
+			- Built internal developer tooling and CI/CD automation covering deployments, release management, changelogs, GitHub workflows, and Slack notifications, significantly reducing manual engineering operations.
+
+			- Transformed release and deployment processes into self-service workflows, reducing dependency on individual engineers and increasing team autonomy and operational resilience.
+
+			- Led platform modernization initiatives including Node.js and React upgrades, monorepo foundations, CI/CD improvements, API architecture, and automated integration testing.
+
+			- Mentored engineers across technical ownership, communication, documentation, and leadership, progressively delegating responsibilities and increasing their autonomy and organizational impact.
+
+			- Established clearer engineering standards and technical sources of truth through architectural proposals, documentation, automation, and standardized development workflows.
+
+			- Operated with high autonomy through changing product priorities, proactively identifying technical opportunities and balancing short-term product delivery with long-term platform improvements.
+
+			skills: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
 			",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "node",
         "react",
@@ -88,28 +163,28 @@ Object {
       ],
       "title": "Lead Software Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "MySelf",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "jun",
           "year": "2021",
         },
-        "to": Object {
+        "to": {
           "month": "current",
           "year": "current",
         },
       },
       "description": "Consultant, Site projects, Learning and Mentoring
 
-			Stack: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
+			skills: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
 			",
-      "keywords": Array [
+      "keywords": [
         "vue",
         "vue3",
         "pinia",
@@ -133,27 +208,27 @@ Object {
       ],
       "title": "Full Stack Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "BackMarket",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "august",
           "year": "2021",
         },
-        "to": Object {
+        "to": {
           "month": "march",
           "year": "2023",
         },
       },
       "description": "Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
 
-			Stack: Vue2, Nuxt, Jest, Testing Library...",
-      "keywords": Array [
+			skills: Vue2, Nuxt, Jest, Testing Library...",
+      "keywords": [
         "vue2",
         "vuex",
         "nuxt",
@@ -167,42 +242,42 @@ Object {
       ],
       "title": "Senior Frontend Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": null,
       },
       "company": null,
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "february",
           "year": "2020",
         },
-        "to": Object {
+        "to": {
           "month": "august",
           "year": "2021",
         },
       },
       "description": "Personal break to focus in my mental health, think, study and work on my side projects and open-source. Self-training to improve as a professional and to be ready for the next challenge.",
-      "keywords": Array [
+      "keywords": [
         "learning",
       ],
       "title": "Sabbatical Gap",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "office",
       },
       "company": "Ubeeqo (Europcar Mobility Group)",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "november",
           "year": "2017",
         },
-        "to": Object {
+        "to": {
           "month": "february",
           "year": "2020",
         },
@@ -220,8 +295,8 @@ Object {
 			- Develop and define e2e implementation.
 			- Recruiting frontend and QA team.
 
-			Stack: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.",
-      "keywords": Array [
+			skills: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.",
+      "keywords": [
         "vue",
         "docker",
         "lidership",
@@ -236,19 +311,19 @@ Object {
       ],
       "title": "Engineering Manager (hands-on) & Lead Frontend Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "office",
       },
       "company": "",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "-",
           "year": "2011",
         },
-        "to": Object {
+        "to": {
           "month": "-",
           "year": "2015",
         },
@@ -258,7 +333,7 @@ Object {
 			Worked Trovit, BeRepublic, FocusOnEmotions, Zyncro, Stuart Delivery and Instaply,
 
 			Used JS, AngularJS, ReactJS, NodeJS, CSS, Stylus, Grunt, Gulp, Npm, CI, Scrum methodology and SOLID practices, SockerIO, PHP, ...",
-      "keywords": Array [
+      "keywords": [
         "php",
         "jquery",
         "nodejs",
@@ -275,31 +350,31 @@ Object {
 }
 `;
 
-exports[`Home get controller: GET / should return the correct resource /jobs with a correct filter 1`] = `
-Object {
-  "data": Array [
-    Object {
-      "baseOn": Object {
+exports[`Home get controller: GET / > should return the correct resource /jobs with a correct filter 1`] = `
+{
+  "data": [
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "MySelf",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "jun",
           "year": "2021",
         },
-        "to": Object {
+        "to": {
           "month": "current",
           "year": "current",
         },
       },
       "description": "Consultant, Site projects, Learning and Mentoring
 
-			Stack: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
+			skills: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
 			",
-      "keywords": Array [
+      "keywords": [
         "vue",
         "vue3",
         "pinia",
@@ -323,27 +398,27 @@ Object {
       ],
       "title": "Full Stack Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "BackMarket",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "august",
           "year": "2021",
         },
-        "to": Object {
+        "to": {
           "month": "march",
           "year": "2023",
         },
       },
       "description": "Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
 
-			Stack: Vue2, Nuxt, Jest, Testing Library...",
-      "keywords": Array [
+			skills: Vue2, Nuxt, Jest, Testing Library...",
+      "keywords": [
         "vue2",
         "vuex",
         "nuxt",
@@ -357,19 +432,19 @@ Object {
       ],
       "title": "Senior Frontend Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "office",
       },
       "company": "Ubeeqo (Europcar Mobility Group)",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "november",
           "year": "2017",
         },
-        "to": Object {
+        "to": {
           "month": "february",
           "year": "2020",
         },
@@ -387,8 +462,8 @@ Object {
 			- Develop and define e2e implementation.
 			- Recruiting frontend and QA team.
 
-			Stack: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.",
-      "keywords": Array [
+			skills: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.",
+      "keywords": [
         "vue",
         "docker",
         "lidership",
@@ -407,22 +482,22 @@ Object {
 }
 `;
 
-exports[`Home get controller: GET / should return the correct resource /name 1`] = `
-Object {
+exports[`Home get controller: GET / > should return the correct resource /name 1`] = `
+{
   "data": "Dimas",
 }
 `;
 
-exports[`Home get controller: GET / should return the correct resource /phone 1`] = `
-Object {
+exports[`Home get controller: GET / > should return the correct resource /phone 1`] = `
+{
   "data": "+34 000 000 000",
 }
 `;
 
-exports[`Home get controller: GET / should return the full data by default 1`] = `
-Object {
+exports[`Home get controller: GET / > should return the full data by default 1`] = `
+{
   "alias": "dimaslz",
-  "baseOn": Object {
+  "baseOn": {
     "city": "Barcelona",
     "country": "Spain",
   },
@@ -439,18 +514,18 @@ Object {
 	With a history of working in diverse, cross-functional teams, I am well-prepared for remote collaboration. My core values include empathy, transparency, and a willingness to both mentor and learn.
 
 	I am excited about the possibility of bringing my blend of experience, innovation, and collaborative spirit to the company. I look forward to the opportunity to discuss how my background, skills, and enthusiasms can contribute to your exciting product.",
-  "education": Array [
-    Object {
-      "baseOn": Object {
+  "education": [
+    {
+      "baseOn": {
         "city": "Santa Cruz de Tenerife",
         "country": "Spain",
       },
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "-",
           "year": "2009",
         },
-        "to": Object {
+        "to": {
           "month": "-",
           "year": "2011",
         },
@@ -460,7 +535,7 @@ Object {
     },
   ],
   "email": undefined,
-  "formerJobs": Array [
+  "formerJobs": [
     "Trovit",
     "BeRepublic",
     "FocusOnEmotions",
@@ -469,75 +544,150 @@ Object {
     "Ubeeqo/Europcar Mobility Group",
   ],
   "interests": "Entrepreneurship, business, web development, mobile, backend, devops, product, management, ...",
-  "introduction": "Enthusiastic self-taught and crazy about technology, I work in web technologies since 2011, today mainly focused on frontend technologies but also enjoying backend and mobile environments in side projects.
+  "introduction": "Software & Engineering Manager (Hands-on) with over a decade of experience on software engineering, deeply involved in architecture and software development. I specialize in transforming engineering organizations through technical leadership, platform modernization, automation, and a strong engineering culture.
 
-		I like innovation, entrepreneurial mindset and business stories. Learning, discovering, sharing and helping are the keys to my daily motivation.
+My approach combines strategic thinking with hands-on execution. I enjoy solving complex technical challenges, mentoring engineers, improving developer experience, and driving initiatives that increase product quality, operational efficiency, and business impact. Whether leading teams through organizational change, modernizing legacy systems, improving application performance, or establishing engineering standards, I focus on delivering sustainable solutions with measurable results.
 
-		My top topics are cloud platforms, SAAS, tooling development, open source, learning, automation, React, Vue, Angular, Svelte, Typescript, Kubernetes, Docker, Github Actions, AWS, Testing (unit, integration, e2e), nodejs and more. I'm open to listen, learn and code!",
-  "jobs": Array [
-    Object {
-      "baseOn": Object {
+I believe the best engineering leaders stay close to both the product and the people. I lead by example, promote ownership and collaboration, and create environments where engineers can grow while delivering reliable, scalable software that makes a real difference for customers.",
+  "jobs": [
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "hybrid",
       },
       "company": "The Knot Worldwide",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "Apr",
           "year": "2025",
         },
-        "to": Object {
+        "to": {
           "month": "current",
           "year": "current",
         },
       },
-      "description": "I continue to work as a servant leader, but I also help my Team grow in their professional careers, doing reviews, O3 mettings and other management tasks.
+      "description": "Hands-on Engineering Manager with a strong platform engineering background who combines technical depth, people leadership, type coding, and product ownership. Experienced leading engineering organizations through periods of change while modernizing platforms, improving performance, driving engineering excellence, mentoring teams, and delivering measurable business outcomes as possible.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			The following are some of the highlights, got thanks to my team, during my time as Engineering Manager and Lead Software Engineer:
+
+			ENGINEERING LEADERSHIP
+			- Successfully led engineering during a period of organizational transition, assuming responsibilities beyond the role without formal direction.
+			- Managed and mentored a team of engineers while remaining an active technical contributor.
+			- Extended leadership beyond direct reports by mentoring engineers across teams
+			- Built trust through a servant leadership approach, staying close to engineering teams and leading by example.
+
+			OWNERSHIP & ORGANIZATIONAL IMPACT
+			- Took ownership of critical engineering operations, tooling, budgets, and day-to-day engineering management during leadership gaps.
+			- Helped maintain team engagement and delivery despite challenges, while protecting team performance and retaining engineering focus.
+			- Identified, prioritized, and advocated for technical debt as part of engineering planning and OKRs.
+			- Proactively drove engineering improvements without waiting for direction.
+
+			TEAM IMPACT & TECHNICAL LEADERSHIP
+			- Modernization of the engineering platform across multiple repositories.
+			- Improved security posture and reducing infrastructure footprint (~15% image size reduction).
+			- Migration of a legacy to latest engine version, enabling long-term maintainability and reducing dependency risks.
+			- Championed engineering standards, CI/CD improvements, and reusable GitHub Actions across repositories.
+			- Setup strategy for migrating end-to-end testing from Cypress to a centralized Playwright monorepo.
+			- Established secure coding practices and engineering standards through technical leadership.
+
+			PRODUCT & PERFORMANCE IMPACT
+			- Reduced application page size from ~40 MB to ~9 MB.
+			- Reduced network requests from ~145 to ~50.
+			- Improved page load time from ~3s to ~1.5s.
+			- Reduced homepage payload from ~25 MB to ~3 MB through image optimization.
+			- Automated operational workflows through Contentful, eliminating recurring manual BAU tasks.
+			- Contributed to infrastructure optimization resulting in approximately important annual cloud savings.
+			- Improved application readiness for SEO, SSR, and future AI/LLM initiatives.
+
+			DELIVERY
+			- Delivered strategic product initiatives.
+			- Successfully delivered high-impact projects despite organizational instability and limited engineering capacity.
+			- Encouraged teams to validate ideas through proofs of concept before committing to full implementation.
+
+			MANAGEMENT & MENTORING
+			- Conducted regular 1:1s, coaching, and career mentoring.
+			- Mentored engineers outside direct reporting lines.
+			- Helped engineers increase ownership, visibility, and technical impact.
+			- Balanced people management with hands-on software engineering.
+
+			skills: Engineering Management, Hands-on Engineering Manager, Technical Leadership, Software Architecture, Full Stack Engineering, Platform Engineering, Developer Experience (DevEx), Performance Optimization, CI/CD, GitHub Actions, Next.js, React, TypeScript, Node.js, Redis, MySql, PostgreSQL, AWS, Docker, Akamai, Kubernetes, Playwright, Testing Strategy, Engineering Excellence, Technical Debt Management, Staff Engineering, Team Leadership, Mentoring, Cross-functional Leadership, Agile Delivery, Engineering Strategy, Platform Modernization, Security, Observability.
 			",
-      "keywords": Array [
-        "nextjs",
-        "node",
-        "react",
-        "aws",
-        "akamai",
-        "docker",
-        "kubernetes",
-        "cypress",
-        "github",
-        "leadership",
-        "redis",
-        "mysql",
-        "ci/cd",
-        "management",
+      "keywords": [
+        "Engineering Management",
+        "Hands-on Engineering Manager",
+        "Technical Leadership",
+        "Software Architecture",
+        "Full Stack Engineering",
+        "Platform Engineering",
+        "Developer Experience (DevEx)",
+        "Performance Optimization",
+        "CI/CD",
+        "GitHub Actions",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Redis",
+        "MySql",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "Akamai",
+        "Kubernetes",
+        "Playwright",
+        "Testing Strategy",
+        "Engineering Excellence",
+        "Technical Debt Management",
+        "Staff Engineering",
+        "Team Leadership",
+        "Mentoring",
+        "Cross-functional Leadership",
+        "Agile Delivery",
+        "Engineering Strategy",
+        "Platform Modernization",
+        "Security",
+        "Observability",
       ],
       "promotion": true,
       "title": "Engineering Manager (hands-on) & Lead Software Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "The Knot Worldwide",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "Dec",
           "year": "2023",
         },
-        "to": Object {
+        "to": {
           "month": "Apr",
           "year": "2025",
         },
       },
-      "description": "Servant Leader supporting my squad and anybody around me.
-			Improve productivity by automating the process as much as possible, guiding and driving best practices under a pragmatic mindset.
+      "description": "- Led technical ownership across multiple product areas, combining architecture, platform engineering, delivery strategy, and team leadership.
 
-			Stack: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
+			- Designed and rolled out dynamic development environments and a new Continuous Delivery workflow, enabling engineers to independently test complex changes and perform multiple deployments per day.
+
+			- Built internal developer tooling and CI/CD automation covering deployments, release management, changelogs, GitHub workflows, and Slack notifications, significantly reducing manual engineering operations.
+
+			- Transformed release and deployment processes into self-service workflows, reducing dependency on individual engineers and increasing team autonomy and operational resilience.
+
+			- Led platform modernization initiatives including Node.js and React upgrades, monorepo foundations, CI/CD improvements, API architecture, and automated integration testing.
+
+			- Mentored engineers across technical ownership, communication, documentation, and leadership, progressively delegating responsibilities and increasing their autonomy and organizational impact.
+
+			- Established clearer engineering standards and technical sources of truth through architectural proposals, documentation, automation, and standardized development workflows.
+
+			- Operated with high autonomy through changing product priorities, proactively identifying technical opportunities and balancing short-term product delivery with long-term platform improvements.
+
+			skills: NextJS, Node, React, AWS, Akamai, Docker, Kubernetes, Cypress, Github, Redis, MySql, CI/CD...
 			",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "node",
         "react",
@@ -554,28 +704,28 @@ Object {
       ],
       "title": "Lead Software Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "MySelf",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "jun",
           "year": "2021",
         },
-        "to": Object {
+        "to": {
           "month": "current",
           "year": "current",
         },
       },
       "description": "Consultant, Site projects, Learning and Mentoring
 
-			Stack: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
+			skills: Vue2, Vue3(pinia + TS), NuxtJS, NextJS, Jest, Testing Library, Cypress, Playwright, NodeJS+TS, Angular, React+TS, Docker, Vite, SockerIO, MongoDB, Redis, ...
 			",
-      "keywords": Array [
+      "keywords": [
         "vue",
         "vue3",
         "pinia",
@@ -599,27 +749,27 @@ Object {
       ],
       "title": "Full Stack Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "remote",
       },
       "company": "BackMarket",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "august",
           "year": "2021",
         },
-        "to": Object {
+        "to": {
           "month": "march",
           "year": "2023",
         },
       },
       "description": "Helping to deliver quality features, promoting good testing practices and working in performance. Involved in big migration projects for next company challenge.
 
-			Stack: Vue2, Nuxt, Jest, Testing Library...",
-      "keywords": Array [
+			skills: Vue2, Nuxt, Jest, Testing Library...",
+      "keywords": [
         "vue2",
         "vuex",
         "nuxt",
@@ -633,42 +783,42 @@ Object {
       ],
       "title": "Senior Frontend Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": null,
       },
       "company": null,
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "february",
           "year": "2020",
         },
-        "to": Object {
+        "to": {
           "month": "august",
           "year": "2021",
         },
       },
       "description": "Personal break to focus in my mental health, think, study and work on my side projects and open-source. Self-training to improve as a professional and to be ready for the next challenge.",
-      "keywords": Array [
+      "keywords": [
         "learning",
       ],
       "title": "Sabbatical Gap",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "office",
       },
       "company": "Ubeeqo (Europcar Mobility Group)",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "november",
           "year": "2017",
         },
-        "to": Object {
+        "to": {
           "month": "february",
           "year": "2020",
         },
@@ -686,8 +836,8 @@ Object {
 			- Develop and define e2e implementation.
 			- Recruiting frontend and QA team.
 
-			Stack: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.",
-      "keywords": Array [
+			skills: vanilla js, vue (v2.x), vuex, sass, nuxt, nightwatch and cypress, jest, webpack, nodejs, babel, rollup, docker, scrum.",
+      "keywords": [
         "vue",
         "docker",
         "lidership",
@@ -702,19 +852,19 @@ Object {
       ],
       "title": "Engineering Manager (hands-on) & Lead Frontend Engineer",
     },
-    Object {
-      "baseOn": Object {
+    {
+      "baseOn": {
         "city": "Barcelona",
         "country": "Spain",
         "mode": "office",
       },
       "company": "",
-      "date": Object {
-        "from": Object {
+      "date": {
+        "from": {
           "month": "-",
           "year": "2011",
         },
-        "to": Object {
+        "to": {
           "month": "-",
           "year": "2015",
         },
@@ -724,7 +874,7 @@ Object {
 			Worked Trovit, BeRepublic, FocusOnEmotions, Zyncro, Stuart Delivery and Instaply,
 
 			Used JS, AngularJS, ReactJS, NodeJS, CSS, Stylus, Grunt, Gulp, Npm, CI, Scrum methodology and SOLID practices, SockerIO, PHP, ...",
-      "keywords": Array [
+      "keywords": [
         "php",
         "jquery",
         "nodejs",
@@ -738,7 +888,7 @@ Object {
       "title": "Previous experiences",
     },
   ],
-  "keywords": Array [
+  "keywords": [
     "javascript",
     "vue",
     "react",
@@ -765,16 +915,16 @@ Object {
   ],
   "lastname": "López Zurita",
   "name": "Dimas",
-  "network": Object {
+  "network": {
     "github": "https://github.com/dimaslz",
     "linkedin": "https://www.linkedin.com/in/dimaslopezzurita",
     "twitter": "https://twitter.com/dimaslz",
   },
   "phone": undefined,
-  "projects": Array [
-    Object {
+  "projects": [
+    {
       "description": "An Angular components library to use Heroicons.com in your Angular projects.",
-      "keywords": Array [
+      "keywords": [
         "typescript",
         "javascript",
         "angular",
@@ -787,10 +937,17 @@ Object {
       "name": "ng-heroicons",
       "npm": "https://www.npmjs.com/package/@dimaslz/ng-heroicons",
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/ng-heroicons",
       ],
-      "stack": Array [
+      "skills": [
+        "typescript",
+        "javascript",
+        "angular",
+        "nodejs",
+        "tailwindcss",
+      ],
+      "stack": [
         "typescript",
         "javascript",
         "angular",
@@ -799,33 +956,9 @@ Object {
       ],
       "url": "https://ng-heroicons.dimaslz.dev",
     },
-    Object {
-      "description": "A tool to create mock Api responses with your custom schema.",
-      "keywords": Array [
-        "typescript",
-        "preact",
-        "nodejs",
-        "vitejs",
-        "tools",
-        "api",
-        "tailwindcss",
-      ],
-      "name": "Randomdata",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "typescript",
-        "preact",
-        "nodejs",
-        "vitejs",
-        "tailwindcss",
-      ],
-      "url": "https://randomdata.loremapi.io",
-    },
-    Object {
+    {
       "description": "A tool to create a framework icon component from a SVG",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "nodejs",
         "tailwindcss",
@@ -834,67 +967,22 @@ Object {
       "name": "Framework icon builder",
       "npm": null,
       "public": false,
-      "repository": Array [],
-      "stack": Array [
+      "repository": [],
+      "skills": [
+        "nextjs",
+        "nodejs",
+        "tailwindcss",
+      ],
+      "stack": [
         "nextjs",
         "nodejs",
         "tailwindcss",
       ],
       "url": "https://svg-icon-2-fw-component.dimaslz.dev",
     },
-    Object {
-      "description": "Deploy any project easily, like Vercel or Heroku but in your self hosting.",
-      "keywords": Array [
-        "vitejs",
-        "typescript",
-        "vue3",
-        "pinia",
-        "tailwindcss",
-        "docker",
-        "tools",
-        "github actions",
-      ],
-      "name": "Fito deploy",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "vitejs",
-        "typescript",
-        "vue3",
-        "pinia",
-        "tailwindcss",
-        "docker",
-        "github actions",
-      ],
-      "url": "https://fito-deploy.dimaslz.dev",
-    },
-    Object {
-      "description": "Mock and document your Api's",
-      "keywords": Array [
-        "angular",
-        "nodejs",
-        "tailwindcss",
-        "typescript",
-        "tools",
-        "api",
-        "developers",
-      ],
-      "name": "Loremapi",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "angular",
-        "nodejs",
-        "tailwindcss",
-        "typescript",
-      ],
-      "url": "https://loremapi.io",
-    },
-    Object {
+    {
       "description": "My online CV",
-      "keywords": Array [
+      "keywords": [
         "svelte",
         "tailwindcss",
         "typescript",
@@ -904,19 +992,24 @@ Object {
       "name": "cv.dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz-cv",
       ],
-      "stack": Array [
+      "skills": [
+        "svelte",
+        "tailwindcss",
+        "typescript",
+      ],
+      "stack": [
         "svelte",
         "tailwindcss",
         "typescript",
       ],
       "url": "https://cv.dimaslz.dev",
     },
-    Object {
+    {
       "description": "My professional info by API",
-      "keywords": Array [
+      "keywords": [
         "nodejs",
         "typescript",
         "cv",
@@ -925,18 +1018,22 @@ Object {
       "name": "api.dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz-api",
       ],
-      "stack": Array [
+      "skills": [
+        "nodejs",
+        "typescript",
+      ],
+      "stack": [
         "nodejs",
         "typescript",
       ],
       "url": "https://api.dimaslz.dev",
     },
-    Object {
+    {
       "description": "Dev landing",
-      "keywords": Array [
+      "keywords": [
         "javascript",
         "tailwindcss",
         "landing",
@@ -944,18 +1041,22 @@ Object {
       "name": "dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz.io-landing",
       ],
-      "stack": Array [
+      "skills": [
+        "javascript",
+        "tailwindcss",
+      ],
+      "stack": [
         "javascript",
         "tailwindcss",
       ],
       "url": "https://dimaslz.dev",
     },
-    Object {
+    {
       "description": "Profesional landing profile",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "typescript",
         "tailwindcss",
@@ -963,10 +1064,15 @@ Object {
       "name": "dimaslz.com",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz.io",
       ],
-      "stack": Array [
+      "skills": [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+      ],
+      "stack": [
         "nextjs",
         "typescript",
         "tailwindcss",
@@ -974,9 +1080,9 @@ Object {
       "url": "https://dimaslz.com",
     },
   ],
-  "status": Array [
+  "status": [
     "Working at MySelf: open as freelance, mentor and consultant",
   ],
-  "title": "Senior Software Engineer",
+  "title": "Engineering Manager, Leadership & Full-Stack Engineer",
 }
 `;

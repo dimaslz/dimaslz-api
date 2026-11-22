@@ -1,6 +1,5 @@
-import { DimaslzData } from "@/types";
+import type { DimaslzData } from "@/types";
 
-/* eslint-disable max-len */
 const { DATA_EMAIL, DATA_PHONE } = process.env;
 
 export default {

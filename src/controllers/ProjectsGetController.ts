@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import httpStatus from "http-status";
 
-import { Controller } from "./Controller";
+import type { Controller } from "./Controller";
 
 export default class ProjectsGetController implements Controller {
 	async run(req: Request<{ attribute: string }, never, never, never>, res: Response) {

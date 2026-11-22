@@ -1,10 +1,11 @@
 import compress from "compression";
 import cors from "cors";
 import errorHandler from "errorhandler";
-import express, { Request, Response } from "express";
+import type { Request, Response } from "express";
+import express from "express";
 import Router from "express-promise-router";
 import * as helmet from "helmet";
-import * as http from "http";
+import type * as http from "http";
 import httpStatus from "http-status";
 
 import { registerRoutes } from "./routes";
@@ -32,7 +33,7 @@ export class Server {
 		this.express.use(router);
 		registerRoutes(router);
 
-		router.use((err: Error, req: Request, res: Response, next: Function) => {
+		router.use((err: Error, req: Request, res: Response, _next: Function) => {
 			console.error(err);
 			res.status(httpStatus.INTERNAL_SERVER_ERROR).send(err.message);
 		});
@@ -43,8 +44,8 @@ export class Server {
 			this.httpServer = this.express.listen(this.port, () => {
 				console.info(
 					`  dimaslz resume by Api -> http://localhost:${this.port} in ${this.express.get(
-						"env"
-					)} mode`
+						"env",
+					)} mode`,
 				);
 				console.info("  Press CTRL-C to stop\n");
 				resolve();

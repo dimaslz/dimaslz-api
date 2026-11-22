@@ -1,11 +1,11 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Projects get controller: GET /projects should return all projects by default 1`] = `
-Object {
-  "data": Array [
-    Object {
+exports[`Projects get controller: GET /projects > should return all projects by default 1`] = `
+{
+  "data": [
+    {
       "description": "An Angular components library to use Heroicons.com in your Angular projects.",
-      "keywords": Array [
+      "keywords": [
         "typescript",
         "javascript",
         "angular",
@@ -18,10 +18,17 @@ Object {
       "name": "ng-heroicons",
       "npm": "https://www.npmjs.com/package/@dimaslz/ng-heroicons",
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/ng-heroicons",
       ],
-      "stack": Array [
+      "skills": [
+        "typescript",
+        "javascript",
+        "angular",
+        "nodejs",
+        "tailwindcss",
+      ],
+      "stack": [
         "typescript",
         "javascript",
         "angular",
@@ -30,33 +37,9 @@ Object {
       ],
       "url": "https://ng-heroicons.dimaslz.dev",
     },
-    Object {
-      "description": "A tool to create mock Api responses with your custom schema.",
-      "keywords": Array [
-        "typescript",
-        "preact",
-        "nodejs",
-        "vitejs",
-        "tools",
-        "api",
-        "tailwindcss",
-      ],
-      "name": "Randomdata",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "typescript",
-        "preact",
-        "nodejs",
-        "vitejs",
-        "tailwindcss",
-      ],
-      "url": "https://randomdata.loremapi.io",
-    },
-    Object {
+    {
       "description": "A tool to create a framework icon component from a SVG",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "nodejs",
         "tailwindcss",
@@ -65,67 +48,22 @@ Object {
       "name": "Framework icon builder",
       "npm": null,
       "public": false,
-      "repository": Array [],
-      "stack": Array [
+      "repository": [],
+      "skills": [
+        "nextjs",
+        "nodejs",
+        "tailwindcss",
+      ],
+      "stack": [
         "nextjs",
         "nodejs",
         "tailwindcss",
       ],
       "url": "https://svg-icon-2-fw-component.dimaslz.dev",
     },
-    Object {
-      "description": "Deploy any project easily, like Vercel or Heroku but in your self hosting.",
-      "keywords": Array [
-        "vitejs",
-        "typescript",
-        "vue3",
-        "pinia",
-        "tailwindcss",
-        "docker",
-        "tools",
-        "github actions",
-      ],
-      "name": "Fito deploy",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "vitejs",
-        "typescript",
-        "vue3",
-        "pinia",
-        "tailwindcss",
-        "docker",
-        "github actions",
-      ],
-      "url": "https://fito-deploy.dimaslz.dev",
-    },
-    Object {
-      "description": "Mock and document your Api's",
-      "keywords": Array [
-        "angular",
-        "nodejs",
-        "tailwindcss",
-        "typescript",
-        "tools",
-        "api",
-        "developers",
-      ],
-      "name": "Loremapi",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "angular",
-        "nodejs",
-        "tailwindcss",
-        "typescript",
-      ],
-      "url": "https://loremapi.io",
-    },
-    Object {
+    {
       "description": "My online CV",
-      "keywords": Array [
+      "keywords": [
         "svelte",
         "tailwindcss",
         "typescript",
@@ -135,19 +73,24 @@ Object {
       "name": "cv.dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz-cv",
       ],
-      "stack": Array [
+      "skills": [
+        "svelte",
+        "tailwindcss",
+        "typescript",
+      ],
+      "stack": [
         "svelte",
         "tailwindcss",
         "typescript",
       ],
       "url": "https://cv.dimaslz.dev",
     },
-    Object {
+    {
       "description": "My professional info by API",
-      "keywords": Array [
+      "keywords": [
         "nodejs",
         "typescript",
         "cv",
@@ -156,18 +99,22 @@ Object {
       "name": "api.dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz-api",
       ],
-      "stack": Array [
+      "skills": [
+        "nodejs",
+        "typescript",
+      ],
+      "stack": [
         "nodejs",
         "typescript",
       ],
       "url": "https://api.dimaslz.dev",
     },
-    Object {
+    {
       "description": "Dev landing",
-      "keywords": Array [
+      "keywords": [
         "javascript",
         "tailwindcss",
         "landing",
@@ -175,18 +122,22 @@ Object {
       "name": "dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz.io-landing",
       ],
-      "stack": Array [
+      "skills": [
+        "javascript",
+        "tailwindcss",
+      ],
+      "stack": [
         "javascript",
         "tailwindcss",
       ],
       "url": "https://dimaslz.dev",
     },
-    Object {
+    {
       "description": "Profesional landing profile",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "typescript",
         "tailwindcss",
@@ -194,10 +145,15 @@ Object {
       "name": "dimaslz.com",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz.io",
       ],
-      "stack": Array [
+      "skills": [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+      ],
+      "stack": [
         "nextjs",
         "typescript",
         "tailwindcss",
@@ -208,12 +164,12 @@ Object {
 }
 `;
 
-exports[`Projects get controller: GET /projects should return projects which match with the query 1`] = `
-Object {
-  "data": Array [
-    Object {
+exports[`Projects get controller: GET /projects > should return projects which match with the query 1`] = `
+{
+  "data": [
+    {
       "description": "An Angular components library to use Heroicons.com in your Angular projects.",
-      "keywords": Array [
+      "keywords": [
         "typescript",
         "javascript",
         "angular",
@@ -226,10 +182,17 @@ Object {
       "name": "ng-heroicons",
       "npm": "https://www.npmjs.com/package/@dimaslz/ng-heroicons",
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/ng-heroicons",
       ],
-      "stack": Array [
+      "skills": [
+        "typescript",
+        "javascript",
+        "angular",
+        "nodejs",
+        "tailwindcss",
+      ],
+      "stack": [
         "typescript",
         "javascript",
         "angular",
@@ -238,83 +201,9 @@ Object {
       ],
       "url": "https://ng-heroicons.dimaslz.dev",
     },
-    Object {
-      "description": "A tool to create mock Api responses with your custom schema.",
-      "keywords": Array [
-        "typescript",
-        "preact",
-        "nodejs",
-        "vitejs",
-        "tools",
-        "api",
-        "tailwindcss",
-      ],
-      "name": "Randomdata",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "typescript",
-        "preact",
-        "nodejs",
-        "vitejs",
-        "tailwindcss",
-      ],
-      "url": "https://randomdata.loremapi.io",
-    },
-    Object {
-      "description": "Deploy any project easily, like Vercel or Heroku but in your self hosting.",
-      "keywords": Array [
-        "vitejs",
-        "typescript",
-        "vue3",
-        "pinia",
-        "tailwindcss",
-        "docker",
-        "tools",
-        "github actions",
-      ],
-      "name": "Fito deploy",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "vitejs",
-        "typescript",
-        "vue3",
-        "pinia",
-        "tailwindcss",
-        "docker",
-        "github actions",
-      ],
-      "url": "https://fito-deploy.dimaslz.dev",
-    },
-    Object {
-      "description": "Mock and document your Api's",
-      "keywords": Array [
-        "angular",
-        "nodejs",
-        "tailwindcss",
-        "typescript",
-        "tools",
-        "api",
-        "developers",
-      ],
-      "name": "Loremapi",
-      "npm": null,
-      "public": false,
-      "repository": Array [],
-      "stack": Array [
-        "angular",
-        "nodejs",
-        "tailwindcss",
-        "typescript",
-      ],
-      "url": "https://loremapi.io",
-    },
-    Object {
+    {
       "description": "My online CV",
-      "keywords": Array [
+      "keywords": [
         "svelte",
         "tailwindcss",
         "typescript",
@@ -324,19 +213,24 @@ Object {
       "name": "cv.dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz-cv",
       ],
-      "stack": Array [
+      "skills": [
+        "svelte",
+        "tailwindcss",
+        "typescript",
+      ],
+      "stack": [
         "svelte",
         "tailwindcss",
         "typescript",
       ],
       "url": "https://cv.dimaslz.dev",
     },
-    Object {
+    {
       "description": "My professional info by API",
-      "keywords": Array [
+      "keywords": [
         "nodejs",
         "typescript",
         "cv",
@@ -345,18 +239,22 @@ Object {
       "name": "api.dimaslz.dev",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz-api",
       ],
-      "stack": Array [
+      "skills": [
+        "nodejs",
+        "typescript",
+      ],
+      "stack": [
         "nodejs",
         "typescript",
       ],
       "url": "https://api.dimaslz.dev",
     },
-    Object {
+    {
       "description": "Profesional landing profile",
-      "keywords": Array [
+      "keywords": [
         "nextjs",
         "typescript",
         "tailwindcss",
@@ -364,10 +262,15 @@ Object {
       "name": "dimaslz.com",
       "npm": null,
       "public": true,
-      "repository": Array [
+      "repository": [
         "https://github.com/dimaslz/dimaslz.io",
       ],
-      "stack": Array [
+      "skills": [
+        "nextjs",
+        "typescript",
+        "tailwindcss",
+      ],
+      "stack": [
         "nextjs",
         "typescript",
         "tailwindcss",

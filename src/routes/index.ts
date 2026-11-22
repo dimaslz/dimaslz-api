@@ -1,8 +1,8 @@
-import { Router } from "express";
-import glob from "glob";
+import type { Router } from "express";
+import { globSync } from "glob";
 
 export function registerRoutes(router: Router) {
-	const routes = glob.sync(`${__dirname}/**/*.route.*`);
+	const routes = globSync(`${__dirname}/**/*.route.*`);
 	routes.map((route) => register(route, router));
 }
 

@@ -1,4 +1,5 @@
 import httpStatus from "http-status";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import HomeGetController from "./HomeGetController";
 
@@ -6,7 +7,7 @@ describe("Home get controller: GET /", () => {
 	const env = process.env;
 
 	beforeEach(() => {
-		jest.resetModules();
+		vi.resetModules();
 		process.env = { ...env };
 	});
 
@@ -17,8 +18,8 @@ describe("Home get controller: GET /", () => {
 	it("should return the full data by default", async () => {
 		const homeGetController: HomeGetController = new HomeGetController();
 
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: { attribute: null },
@@ -26,7 +27,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
@@ -37,8 +38,8 @@ describe("Home get controller: GET /", () => {
 	it("should return the correct resource /jobs", async () => {
 		const homeGetController: HomeGetController = new HomeGetController();
 
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: {
@@ -49,7 +50,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
@@ -61,8 +62,8 @@ describe("Home get controller: GET /", () => {
 	it("should return the correct resource /jobs with a correct filter", async () => {
 		const homeGetController: HomeGetController = new HomeGetController();
 
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: {
@@ -73,7 +74,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
@@ -85,8 +86,8 @@ describe("Home get controller: GET /", () => {
 	it("should return the correct resource /name", async () => {
 		const homeGetController: HomeGetController = new HomeGetController();
 
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: {
@@ -97,7 +98,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
@@ -111,8 +112,8 @@ describe("Home get controller: GET /", () => {
 		process.env.DATA_PHONE = phone;
 
 		const homeGetController: HomeGetController = new HomeGetController();
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: {
@@ -123,7 +124,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
@@ -137,8 +138,8 @@ describe("Home get controller: GET /", () => {
 		process.env.DATA_EMAIL = email;
 
 		const homeGetController: HomeGetController = new HomeGetController();
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: {
@@ -149,7 +150,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.OK);
@@ -161,8 +162,8 @@ describe("Home get controller: GET /", () => {
 	it("resource does not exists", async () => {
 		const homeGetController: HomeGetController = new HomeGetController();
 
-		const status = jest.fn((v) => v);
-		const json = jest.fn((v) => v);
+		const status = vi.fn((v) => v);
+		const json = vi.fn((v) => v);
 		const result = await homeGetController.run.bind(homeGetController)(
 			{
 				params: { attribute: "something" },
@@ -170,7 +171,7 @@ describe("Home get controller: GET /", () => {
 			{
 				status,
 				json,
-			}
+			},
 		);
 
 		expect(status).toHaveBeenCalledWith(httpStatus.NOT_FOUND);
