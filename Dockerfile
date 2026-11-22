@@ -2,7 +2,7 @@
 FROM node:26-alpine AS build
 ENV HUSKY=0
 ENV COREPACK_HOME=/opt/corepack COREPACK_ENABLE_DOWNLOAD_PROMPT=0
-RUN corepack enable
+RUN npm install -g corepack && corepack enable
 WORKDIR /app
 COPY . .
 RUN pnpm install --frozen-lockfile
@@ -11,7 +11,7 @@ RUN pnpm run build
 FROM node:26-alpine AS runtime
 ENV NODE_ENV=production HOST=0.0.0.0 PORT=3000
 ENV COREPACK_HOME=/opt/corepack COREPACK_ENABLE_DOWNLOAD_PROMPT=0
-RUN corepack enable
+RUN npm install -g corepack && corepack enable
 WORKDIR /app
 COPY --from=build --chown=node:node /app ./
 USER node
